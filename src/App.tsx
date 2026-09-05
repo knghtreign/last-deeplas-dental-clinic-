@@ -45,7 +45,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#EEF7FC] text-[#0B1B33] selection:bg-[#E2F743] selection:text-[#0B1B33] font-['Plus_Jakarta_Sans',sans-serif] overflow-x-hidden">
+    <div className="relative min-h-screen bg-[#F5F9F7] text-[#122620] selection:bg-[#F4F2BA] selection:text-[#122620] font-['Plus_Jakarta_Sans',sans-serif] overflow-x-hidden">
       
       {/* 0. Subtle Lightweight Canvas Particles & Sparkles (requestAnimationFrame) */}
       <BackgroundParticleCanvas />

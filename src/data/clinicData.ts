@@ -273,7 +273,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: CLINIC_IMAGES.smileResult,
     tag: 'WHITENING',
     badge: 'Laser Brightening',
-    color: '#E2F743',
+    color: '#F4F2BA',
   },
   {
     id: 'srv-bonding',
@@ -283,7 +283,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: CLINIC_IMAGES.dentalBonding,
     tag: 'BONDING',
     badge: 'Micro-Sculpting',
-    color: '#61A2EE',
+    color: '#4BB88E',
   },
   {
     id: 'srv-checkups',
@@ -293,7 +293,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: CLINIC_IMAGES.digitalScanner,
     tag: 'CHECK-UPS',
     badge: '3D Optical Scan',
-    color: '#C8F8C3',
+    color: '#D4F3E7',
   },
   {
     id: 'srv-cosmetics',
@@ -303,7 +303,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: CLINIC_IMAGES.heroToothWorkers,
     tag: 'COSMETICS',
     badge: 'Bespoke Aesthetics',
-    color: '#E2F743',
+    color: '#F4F2BA',
   },
   {
     id: 'srv-implants',
@@ -313,7 +313,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: CLINIC_IMAGES.titaniumImplant,
     tag: 'IMPLANTS',
     badge: 'Permanent Root Fix',
-    color: '#61A2EE',
+    color: '#4BB88E',
   },
   {
     id: 'srv-dentures',
@@ -323,7 +323,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=500&q=75',
     tag: 'BRIDGES',
     badge: 'Natural Alignment',
-    color: '#C8F8C3',
+    color: '#D4F3E7',
   },
   {
     id: 'srv-emergency',
@@ -333,7 +333,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: CLINIC_IMAGES.dentistAction,
     tag: 'EMERGENCY',
     badge: 'Immediate Relief',
-    color: '#E2F743',
+    color: '#F4F2BA',
   },
   {
     id: 'srv-extractions',
@@ -343,7 +343,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=500&q=75',
     tag: 'EXTRACTION',
     badge: 'Gentle & Painless',
-    color: '#61A2EE',
+    color: '#4BB88E',
   },
   {
     id: 'srv-fillings',
@@ -353,7 +353,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=500&q=75',
     tag: 'FILLINGS',
     badge: 'Invisible Shield',
-    color: '#C8F8C3',
+    color: '#D4F3E7',
   },
   {
     id: 'srv-guards',
@@ -363,7 +363,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=500&q=75',
     tag: 'GUARDS',
     badge: 'Custom Molded',
-    color: '#E2F743',
+    color: '#F4F2BA',
   },
   {
     id: 'srv-booking',
@@ -373,7 +373,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: CLINIC_IMAGES.clinicLounge,
     tag: 'BOOKING',
     badge: 'Instant Confirmation',
-    color: '#61A2EE',
+    color: '#4BB88E',
   },
   {
     id: 'srv-surgery',
@@ -383,7 +383,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: CLINIC_IMAGES.clinicSuite,
     tag: 'SURGERY',
     badge: 'Hospital-Grade Care',
-    color: '#C8F8C3',
+    color: '#D4F3E7',
   },
   {
     id: 'srv-paediatrics',
@@ -393,7 +393,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: CLINIC_IMAGES.paediatrics,
     tag: 'KIDS CARE',
     badge: 'Fear-Free Comfort',
-    color: '#E2F743',
+    color: '#F4F2BA',
   },
   {
     id: 'srv-rootcanal',
@@ -403,7 +403,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=500&q=75',
     tag: 'ROOT CANAL',
     badge: 'Single-Sitting',
-    color: '#61A2EE',
+    color: '#4BB88E',
   },
   {
     id: 'srv-cleaning',
@@ -413,7 +413,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=500&q=75',
     tag: 'CLEANING',
     badge: 'Ultrasonic Glow',
-    color: '#C8F8C3',
+    color: '#D4F3E7',
   },
   {
     id: 'srv-reshaping',
@@ -423,7 +423,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: 'https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=500&q=75',
     tag: 'RESHAPING',
     badge: 'Enamel Sculpting',
-    color: '#E2F743',
+    color: '#F4F2BA',
   },
   {
     id: 'srv-veneers',
@@ -433,7 +433,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: CLINIC_IMAGES.veneersCrowns,
     tag: 'VENEERS',
     badge: 'Custom Porcelain',
-    color: '#61A2EE',
+    color: '#4BB88E',
   },
   {
     id: 'srv-xray',
@@ -443,7 +443,7 @@ export const CLINIC_SERVICES: ClinicService[] = [
     imageSrc: CLINIC_IMAGES.dentalXray,
     tag: '3D X-RAY',
     badge: 'HD Digital Scans',
-    color: '#C8F8C3',
+    color: '#D4F3E7',
   },
 ];
 

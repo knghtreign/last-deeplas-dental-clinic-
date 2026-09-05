@@ -14,7 +14,7 @@ export const LocationSection: React.FC = () => {
   };
 
   return (
-    <section id="location" className="relative py-10 sm:py-14 -mt-4 sm:-mt-6 px-4 sm:px-8 bg-gradient-to-b from-[#eef5fc] via-[#f5faff] to-[#e6f0fa] overflow-hidden z-10">
+    <section id="location" className="relative py-10 sm:py-14 -mt-4 sm:-mt-6 px-4 sm:px-8 bg-gradient-to-b from-[#F2FAF6] via-[#FAFDFB] to-[#E9F6F0] overflow-hidden z-10">
       
       <div className="max-w-6xl mx-auto">
         
@@ -28,13 +28,13 @@ export const LocationSection: React.FC = () => {
         >
           <div>
             <PopBadge className="mb-2.5">
-              <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
-                <Compass className="w-3.5 h-3.5 text-[#0B1B33]" />
+              <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
+                <Compass className="w-3.5 h-3.5 text-[#122620]" />
                 SOUTH MUMBAI LOCATION
               </span>
             </PopBadge>
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif] tracking-tight">
-              Malabar Hill, <TextHighlight color="blue" variant="bracket">Mumbai</TextHighlight>
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-[#122620] font-['Outfit',sans-serif] tracking-tight">
+              Malabar Hill, <TextHighlight color="mint" variant="bracket">Mumbai</TextHighlight>
             </h2>
           </div>
           <p className="text-slate-600 text-xs sm:text-sm max-w-md font-medium">
@@ -48,7 +48,7 @@ export const LocationSection: React.FC = () => {
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ delay: 0.1, type: 'spring', damping: 16, stiffness: 180 }}
-          className="relative rounded-[36px] bg-white p-4 sm:p-6 border-2 border-white shadow-[0_25px_70px_-15px_rgba(11,27,51,0.15)] overflow-hidden"
+          className="relative rounded-[36px] bg-white p-4 sm:p-6 border-2 border-white shadow-[0_25px_70px_-15px_rgba(18,38,32,0.12)] overflow-hidden"
         >
           
           <div className="relative w-full h-[360px] sm:h-[480px] rounded-[28px] overflow-hidden bg-slate-900 group">
@@ -83,15 +83,15 @@ export const LocationSection: React.FC = () => {
                   }}
                 >
                   {/* Outer pulse wave */}
-                  <div className="absolute w-16 h-16 rounded-full bg-[#E2F743]/50 animate-ping pointer-events-none" />
+                  <div className="absolute w-16 h-16 rounded-full bg-[#F4F2BA]/60 animate-ping pointer-events-none" />
                   
                   {/* The Golden Pin Head */}
-                  <div className="w-12 h-12 rounded-full bg-[#E2F743] text-[#0B1B33] flex items-center justify-center shadow-2xl border-2 border-white ring-4 ring-[#E2F743]/40">
-                    <Sparkles className="w-6 h-6 text-[#0B1B33]" />
+                  <div className="w-12 h-12 rounded-full bg-[#F4F2BA] text-[#122620] flex items-center justify-center shadow-2xl border-2 border-white ring-4 ring-[#F4F2BA]/50">
+                    <Sparkles className="w-6 h-6 text-[#122620]" />
                   </div>
 
                   {/* Pin label badge */}
-                  <div className="mt-2 bg-[#0B1B33] text-white text-[11px] font-black px-3.5 py-1.5 rounded-full shadow-xl border border-white/20 whitespace-nowrap font-['Outfit',sans-serif]">
+                  <div className="mt-2 bg-[#122620] text-white text-[11px] font-black px-3.5 py-1.5 rounded-full shadow-xl border border-white/20 whitespace-nowrap font-['Outfit',sans-serif]">
                     Dr. Deepal's Clinic 📍
                   </div>
                 </motion.div>
@@ -105,16 +105,16 @@ export const LocationSection: React.FC = () => {
               whileHover={{ scale: 1.08, y: -2 }}
               whileTap={{ scale: 0.94 }}
               transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-              className="absolute top-6 right-6 z-30 flex items-center gap-2 bg-[#0B1B33]/95 hover:bg-[#0B1B33] text-white px-4 py-2.5 rounded-full text-xs font-black shadow-xl border border-white/20 backdrop-blur-md transition-colors cursor-pointer font-['Outfit',sans-serif]"
+              className="absolute top-6 right-6 z-30 flex items-center gap-2 bg-[#122620]/95 hover:bg-[#122620] text-white px-4 py-2.5 rounded-full text-xs font-black shadow-xl border border-white/20 backdrop-blur-md transition-colors cursor-pointer font-['Outfit',sans-serif]"
             >
               {isZoomed ? (
                 <>
-                  <ZoomOut className="w-4 h-4 text-[#E2F743]" />
+                  <ZoomOut className="w-4 h-4 text-[#F4F2BA]" />
                   <span>Overview Map</span>
                 </>
               ) : (
                 <>
-                  <ZoomIn className="w-4 h-4 text-[#E2F743]" />
+                  <ZoomIn className="w-4 h-4 text-[#F4F2BA]" />
                   <span>Zoom To Clinic</span>
                 </>
               )}
@@ -132,10 +132,10 @@ export const LocationSection: React.FC = () => {
                 >
                   <div className="flex items-start justify-between mb-2">
                     <div>
-                      <span className="text-[10px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-2.5 py-1 rounded-full font-['Outfit',sans-serif]">
+                      <span className="text-[10px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-2.5 py-1 rounded-full font-['Outfit',sans-serif]">
                         Gate No. 2 · Priyadarshini Park
                       </span>
-                      <h3 className="text-xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif] mt-2">
+                      <h3 className="text-xl font-extrabold text-[#122620] font-['Outfit',sans-serif] mt-2">
                         {CLINIC_DETAILS.name}
                       </h3>
                       <p className="text-xs text-slate-500 font-medium">
@@ -144,7 +144,7 @@ export const LocationSection: React.FC = () => {
                     </div>
                   </div>
 
-                  <p className="text-xs text-slate-700 leading-relaxed font-medium mt-3 mb-4 bg-sky-50/80 p-3 rounded-2xl border border-sky-100">
+                  <p className="text-xs text-slate-700 leading-relaxed font-medium mt-3 mb-4 bg-emerald-50/80 p-3 rounded-2xl border border-emerald-100">
                     📍 {CLINIC_DETAILS.address}
                   </p>
 
@@ -157,9 +157,9 @@ export const LocationSection: React.FC = () => {
                       whileHover={{ scale: 1.05, y: -2 }}
                       whileTap={{ scale: 0.95 }}
                       transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-                      className="flex-1 inline-flex items-center justify-center gap-2 bg-[#0B1B33] hover:bg-[#142d54] text-[#E2F743] font-black text-xs py-3 px-4 rounded-xl shadow-md transition-colors font-['Outfit',sans-serif]"
+                      className="flex-1 inline-flex items-center justify-center gap-2 bg-[#122620] hover:bg-[#1b382f] text-[#F4F2BA] font-black text-xs py-3 px-4 rounded-xl shadow-md transition-colors font-['Outfit',sans-serif]"
                     >
-                      <Navigation className="w-4 h-4 text-[#E2F743]" />
+                      <Navigation className="w-4 h-4 text-[#F4F2BA]" />
                       <span>Get Directions →</span>
                     </motion.a>
 
@@ -169,9 +169,9 @@ export const LocationSection: React.FC = () => {
                       whileHover={{ scale: 1.05, y: -2 }}
                       whileTap={{ scale: 0.95 }}
                       transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-                      className="inline-flex items-center justify-center gap-2 bg-sky-100 hover:bg-sky-200 text-[#0B1B33] font-bold text-xs py-3 px-4 rounded-xl transition-colors"
+                      className="inline-flex items-center justify-center gap-2 bg-emerald-100 hover:bg-emerald-200 text-[#122620] font-bold text-xs py-3 px-4 rounded-xl transition-colors"
                     >
-                      <Phone className="w-4 h-4 text-[#61A2EE]" />
+                      <Phone className="w-4 h-4 text-[#4BB88E]" />
                       <span>Call Clinic</span>
                     </motion.a>
                   </div>
@@ -182,11 +182,11 @@ export const LocationSection: React.FC = () => {
           </div>
 
           {/* Quick Info Grid below map */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 pt-6 border-t border-sky-100/80 text-left">
-            <div className="flex items-start gap-3 bg-sky-50/50 p-4 rounded-2xl">
-              <MapPin className="w-5 h-5 text-[#61A2EE] shrink-0 mt-0.5" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 pt-6 border-t border-emerald-100/80 text-left">
+            <div className="flex items-start gap-3 bg-emerald-50/50 p-4 rounded-2xl">
+              <MapPin className="w-5 h-5 text-[#4BB88E] shrink-0 mt-0.5" />
               <div>
-                <span className="block text-xs font-bold text-[#0B1B33] font-['Outfit',sans-serif]">
+                <span className="block text-xs font-bold text-[#122620] font-['Outfit',sans-serif]">
                   Full Address
                 </span>
                 <span className="block text-xs text-slate-600 leading-tight mt-0.5 font-medium">
@@ -195,10 +195,10 @@ export const LocationSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-3 bg-sky-50/50 p-4 rounded-2xl">
-              <Clock className="w-5 h-5 text-[#61A2EE] shrink-0 mt-0.5" />
+            <div className="flex items-start gap-3 bg-emerald-50/50 p-4 rounded-2xl">
+              <Clock className="w-5 h-5 text-[#4BB88E] shrink-0 mt-0.5" />
               <div>
-                <span className="block text-xs font-bold text-[#0B1B33] font-['Outfit',sans-serif]">
+                <span className="block text-xs font-bold text-[#122620] font-['Outfit',sans-serif]">
                   Timings
                 </span>
                 <span className="block text-xs text-slate-600 leading-tight mt-0.5 font-medium">
@@ -208,13 +208,13 @@ export const LocationSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-3 bg-sky-50/50 p-4 rounded-2xl">
-              <Phone className="w-5 h-5 text-[#61A2EE] shrink-0 mt-0.5" />
+            <div className="flex items-start gap-3 bg-emerald-50/50 p-4 rounded-2xl">
+              <Phone className="w-5 h-5 text-[#4BB88E] shrink-0 mt-0.5" />
               <div>
-                <span className="block text-xs font-bold text-[#0B1B33] font-['Outfit',sans-serif]">
+                <span className="block text-xs font-bold text-[#122620] font-['Outfit',sans-serif]">
                   Direct Contact
                 </span>
-                <a href={`tel:${CLINIC_DETAILS.phoneClean}`} className="block text-xs text-[#0B1B33] font-bold hover:underline mt-0.5">
+                <a href={`tel:${CLINIC_DETAILS.phoneClean}`} className="block text-xs text-[#122620] font-bold hover:underline mt-0.5">
                   {CLINIC_DETAILS.phone}
                 </a>
               </div>

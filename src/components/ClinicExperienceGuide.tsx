@@ -27,7 +27,7 @@ const VISIT_STEPS: VisitStep[] = [
     imageSrc: CLINIC_IMAGES.clinicLounge,
     keyFeature: 'Zero Waiting Room Anxiety',
     pills: ['🌿 Sunlit Park Setting', '🕊️ Zero Waiting Anxiety', '✨ Odour-Free Air'],
-    accentColor: '#E2F743',
+    accentColor: '#F4F2BA',
   },
   {
     stepNumber: '02',
@@ -38,7 +38,7 @@ const VISIT_STEPS: VisitStep[] = [
     imageSrc: CLINIC_IMAGES.dentistAction,
     keyFeature: 'Dedicated Patient Time',
     pills: ['🩺 1-on-1 with Dr. Deepal', '🕊️ Anxiety-Free Care', '💬 Honest Advice'],
-    accentColor: '#61A2EE',
+    accentColor: '#4BB88E',
   },
   {
     stepNumber: '03',
@@ -49,7 +49,7 @@ const VISIT_STEPS: VisitStep[] = [
     imageSrc: CLINIC_IMAGES.isometricClinic,
     keyFeature: 'Zero Poking, Zero Pain',
     pills: ['🔍 3D Digital Scan', '❄️ Topical Numbing Gels', '💎 Enamel-Safe'],
-    accentColor: '#C8F8C3',
+    accentColor: '#D4F3E7',
   },
   {
     stepNumber: '04',
@@ -60,7 +60,7 @@ const VISIT_STEPS: VisitStep[] = [
     imageSrc: CLINIC_IMAGES.clinicSuite,
     keyFeature: '100% Fixed Transparent Costs',
     pills: ['📋 Itemized Estimate', '🛡️ Zero Hidden Fees', '📅 Flexible Slots'],
-    accentColor: '#E2F743',
+    accentColor: '#F4F2BA',
   }
 ];
 
@@ -128,8 +128,8 @@ const TiltStepButton: React.FC<TiltStepButtonProps> = ({
       }}
       className={`relative p-3 sm:p-3.5 rounded-2xl text-left transition-colors duration-200 font-['Outfit',sans-serif] cursor-pointer select-none border-2 overflow-hidden ${
         isActive
-          ? 'bg-[#0B1B33] text-white shadow-xl border-[#0B1B33]'
-          : 'bg-white hover:bg-sky-50/50 text-[#0B1B33] border-white shadow-sm'
+          ? 'bg-[#122620] text-[#F4F2BA] shadow-xl border-[#122620]'
+          : 'bg-white hover:bg-emerald-50/50 text-[#122620] border-white shadow-sm'
       }`}
     >
       {/* Magnetic dynamic cursor lighting */}
@@ -138,8 +138,8 @@ const TiltStepButton: React.FC<TiltStepButtonProps> = ({
           className="absolute inset-0 pointer-events-none transition-opacity duration-300"
           style={{
             background: isActive
-              ? `radial-gradient(circle at ${tilt.glowX}% ${tilt.glowY}%, rgba(226, 247, 67, 0.25), transparent 70%)`
-              : `radial-gradient(circle at ${tilt.glowX}% ${tilt.glowY}%, rgba(97, 162, 238, 0.2), transparent 70%)`,
+              ? `radial-gradient(circle at ${tilt.glowX}% ${tilt.glowY}%, rgba(244, 242, 186, 0.35), transparent 70%)`
+              : `radial-gradient(circle at ${tilt.glowX}% ${tilt.glowY}%, rgba(75, 184, 142, 0.25), transparent 70%)`,
           }}
         />
       )}
@@ -147,12 +147,12 @@ const TiltStepButton: React.FC<TiltStepButtonProps> = ({
       <div className="relative z-10" style={{ transform: 'translateZ(15px)' }}>
         <div className="flex items-center justify-between mb-1">
           <div className={`flex items-center gap-1 text-[10px] font-black tracking-wider uppercase ${
-            isActive ? 'text-[#E2F743]' : 'text-[#61A2EE]'
+            isActive ? 'text-[#F4F2BA]' : 'text-[#4BB88E]'
           }`}>
             {getIcon(idx)}
             <span>STEP {step.stepNumber}</span>
           </div>
-          <span className={`w-2 h-2 rounded-full ${isActive ? 'bg-[#E2F743] animate-pulse' : 'bg-slate-200'}`} />
+          <span className={`w-2 h-2 rounded-full ${isActive ? 'bg-[#F4F2BA] animate-pulse' : 'bg-slate-200'}`} />
         </div>
         <div className="text-xs sm:text-sm font-extrabold truncate">
           {step.headline.split(' ')[0]} {step.headline.split(' ')[1] || ''}
@@ -202,7 +202,7 @@ export const ClinicExperienceGuide: React.FC = () => {
     <section id="about" className="relative py-10 sm:py-16 -mt-2 sm:-mt-4 px-3 sm:px-6 lg:px-8 overflow-hidden z-10">
       
       {/* Background Soft Aura */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-to-r from-[#61A2EE]/15 via-[#C8F8C3]/20 to-[#E2F743]/15 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-to-r from-[#4BB88E]/15 via-[#D4F3E7]/25 to-[#F4F2BA]/20 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-5xl mx-auto">
         
@@ -215,13 +215,13 @@ export const ClinicExperienceGuide: React.FC = () => {
           className="text-center mb-6 sm:mb-8"
         >
           <PopBadge className="mb-2">
-            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
-              <Sparkles className="w-3.5 h-3.5 text-[#0B1B33]" />
+            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
+              <Sparkles className="w-3.5 h-3.5 text-[#122620]" />
               VISIT EXPERIENCE
             </span>
           </PopBadge>
 
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif] tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#122620] font-['Outfit',sans-serif] tracking-tight">
             What Happens When You <TextHighlight color="yellow" variant="wavy">Visit?</TextHighlight>
           </h2>
 
@@ -258,12 +258,12 @@ export const ClinicExperienceGuide: React.FC = () => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: -12 }}
             transition={{ type: 'spring', damping: 16, stiffness: 240 }}
-            className="bg-white rounded-[32px] sm:rounded-[36px] p-5 sm:p-8 shadow-[0_20px_60px_-15px_rgba(11,27,51,0.15)] border-2 border-white grid grid-cols-1 md:grid-cols-12 gap-6 items-center"
+            className="bg-white rounded-[32px] sm:rounded-[36px] p-5 sm:p-8 shadow-[0_20px_60px_-15px_rgba(18,38,32,0.12)] border-2 border-white grid grid-cols-1 md:grid-cols-12 gap-6 items-center"
           >
             
             {/* Left: Visual Media with Interactive Scan / Glow simulation */}
             <div className="md:col-span-6 relative">
-              <div className="relative rounded-[24px] overflow-hidden bg-[#0B1B33] aspect-[4/3] shadow-md border-2 border-sky-100 group">
+              <div className="relative rounded-[24px] overflow-hidden bg-[#122620] aspect-[4/3] shadow-md border-2 border-emerald-100 group">
                 <img
                   src={activeStep.imageSrc}
                   alt={activeStep.headline}
@@ -276,19 +276,19 @@ export const ClinicExperienceGuide: React.FC = () => {
                   <motion.div
                     animate={{ y: ['0%', '100%', '0%'] }}
                     transition={{ repeat: Infinity, duration: 2.4, ease: 'easeInOut' }}
-                    className="absolute inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#E2F743] to-transparent shadow-[0_0_15px_#E2F743] pointer-events-none"
+                    className="absolute inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#F4F2BA] to-transparent shadow-[0_0_15px_#F4F2BA] pointer-events-none"
                   />
                 )}
 
                 {/* Step Pill Overlay */}
-                <div className="absolute top-3 left-3 bg-[#0B1B33]/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-black tracking-wider text-[#E2F743] font-['Outfit',sans-serif] border border-white/20">
+                <div className="absolute top-3 left-3 bg-[#122620]/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-black tracking-wider text-[#F4F2BA] font-['Outfit',sans-serif] border border-white/20">
                   STEP {activeStep.stepNumber} · {activeStep.tagline}
                 </div>
 
                 {/* Key feature bar */}
-                <div className="absolute bottom-3 inset-x-3 bg-[#0B1B33]/90 backdrop-blur-md px-3.5 py-2 rounded-xl text-white text-xs flex items-center justify-between border border-white/15">
-                  <span className="font-bold text-[#E2F743] text-[11px] font-['Outfit',sans-serif]">{activeStep.keyFeature}</span>
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#E2F743]" />
+                <div className="absolute bottom-3 inset-x-3 bg-[#122620]/90 backdrop-blur-md px-3.5 py-2 rounded-xl text-white text-xs flex items-center justify-between border border-white/15">
+                  <span className="font-bold text-[#F4F2BA] text-[11px] font-['Outfit',sans-serif]">{activeStep.keyFeature}</span>
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#F4F2BA]" />
                 </div>
               </div>
             </div>
@@ -296,10 +296,10 @@ export const ClinicExperienceGuide: React.FC = () => {
             {/* Right: Crisp, Short Copy & Interactive Pills */}
             <div className="md:col-span-6 space-y-4 text-left">
               <div>
-                <span className="text-[10px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3 py-1 rounded-full inline-block mb-1.5 font-['Outfit',sans-serif]">
+                <span className="text-[10px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3 py-1 rounded-full inline-block mb-1.5 font-['Outfit',sans-serif]">
                   Step {activeStep.stepNumber}
                 </span>
-                <h3 className="text-xl sm:text-2xl font-black text-[#0B1B33] font-['Outfit',sans-serif] leading-snug">
+                <h3 className="text-xl sm:text-2xl font-black text-[#122620] font-['Outfit',sans-serif] leading-snug">
                   {activeStep.headline}
                 </h3>
               </div>
@@ -318,7 +318,7 @@ export const ClinicExperienceGuide: React.FC = () => {
                     whileTap={{ scale: 0.95 }}
                     transition={{ type: 'spring', damping: 12, stiffness: 300 }}
                     onClick={() => playPop()}
-                    className="inline-flex items-center gap-1.5 bg-[#F0F7FF] hover:bg-[#E2F0FE] text-[#0B1B33] px-3 py-1.5 rounded-full text-xs font-black border border-sky-100 shadow-xs cursor-pointer font-['Outfit',sans-serif]"
+                    className="inline-flex items-center gap-1.5 bg-[#EAF6F1] hover:bg-[#d8efe5] text-[#122620] px-3 py-1.5 rounded-full text-xs font-black border border-emerald-100 shadow-xs cursor-pointer font-['Outfit',sans-serif]"
                   >
                     {pill}
                   </motion.span>
@@ -332,7 +332,7 @@ export const ClinicExperienceGuide: React.FC = () => {
                     onClick={handlePrev}
                     whileHover={{ scale: 1.1, x: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-8 h-8 rounded-full bg-slate-100 hover:bg-[#0B1B33] hover:text-white text-[#0B1B33] flex items-center justify-center transition-colors cursor-pointer"
+                    className="w-8 h-8 rounded-full bg-slate-100 hover:bg-[#122620] hover:text-[#F4F2BA] text-[#122620] flex items-center justify-center transition-colors cursor-pointer"
                     title="Previous Step"
                   >
                     <ChevronLeft className="w-4 h-4" />
@@ -341,14 +341,14 @@ export const ClinicExperienceGuide: React.FC = () => {
                     onClick={handleNext}
                     whileHover={{ scale: 1.1, x: 2 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-8 h-8 rounded-full bg-slate-100 hover:bg-[#0B1B33] hover:text-white text-[#0B1B33] flex items-center justify-center transition-colors cursor-pointer"
+                    className="w-8 h-8 rounded-full bg-slate-100 hover:bg-[#122620] hover:text-[#F4F2BA] text-[#122620] flex items-center justify-center transition-colors cursor-pointer"
                     title="Next Step"
                   >
                     <ChevronRight className="w-4 h-4" />
                   </motion.button>
                 </div>
 
-                <span className="text-[11px] font-black text-[#61A2EE] font-['Outfit',sans-serif]">
+                <span className="text-[11px] font-black text-[#4BB88E] font-['Outfit',sans-serif]">
                   Step {activeStepIdx + 1} of {VISIT_STEPS.length}
                 </span>
               </div>

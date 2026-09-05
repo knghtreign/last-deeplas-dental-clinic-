@@ -44,7 +44,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
         particleCount: 70,
         spread: 60,
         origin: { y: 0.6 },
-        colors: ['#E2F743', '#61A2EE', '#0B1B33', '#ffffff']
+        colors: ['#F4F2BA', '#4BB88E', '#122620', '#ffffff']
       });
     } catch {
       // ignore
@@ -81,17 +81,17 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 }}
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="relative flex items-center gap-2 sm:gap-3 bg-[#0B1B33] hover:bg-[#152a4a] text-white px-3 py-2 sm:pl-4 sm:pr-3 sm:py-3 rounded-full shadow-[0_12px_35px_rgba(11,27,51,0.35)] border-2 border-white/80 transition-all font-['Outfit',sans-serif] z-10 select-none cursor-pointer"
+                className="relative flex items-center gap-2 sm:gap-3 bg-[#122620] hover:bg-[#1b382f] text-white px-3 py-2 sm:pl-4 sm:pr-3 sm:py-3 rounded-full shadow-[0_12px_35px_rgba(18,38,32,0.3)] border-2 border-white/80 transition-all font-['Outfit',sans-serif] z-10 select-none cursor-pointer"
               >
                 {/* Left Live Dot */}
                 <div className="relative flex items-center justify-center shrink-0">
-                  <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-[#E2F743]" />
-                  <span className="absolute w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-[#E2F743] animate-ping opacity-75" />
+                  <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-[#F4F2BA]" />
+                  <span className="absolute w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-[#F4F2BA] animate-ping opacity-75" />
                 </div>
 
                 {/* Pill Text - Compact on Mobile */}
                 <div className="text-left pr-0.5">
-                  <span className="block text-[10px] sm:text-[12px] font-black tracking-wider text-[#E2F743] uppercase leading-none">
+                  <span className="block text-[10px] sm:text-[12px] font-black tracking-wider text-[#F4F2BA] uppercase leading-none">
                     <span className="sm:hidden">TOOTH HURTING? BOOK</span>
                     <span className="hidden sm:inline">TOOTH HURTING? BOOK VISIT</span>
                   </span>
@@ -120,7 +120,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       cy="18"
                       r="15"
                       fill="none"
-                      stroke="#E2F743"
+                      stroke="#F4F2BA"
                       strokeWidth="2.5"
                       strokeLinecap="round"
                       style={{
@@ -130,7 +130,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   </svg>
 
                   {/* Arrow Icon in Ring Center */}
-                  <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-[#E2F743] group-hover:translate-x-0.5 transition-transform" />
+                  <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-[#F4F2BA] group-hover:translate-x-0.5 transition-transform" />
                 </div>
               </motion.button>
             </div>
@@ -153,7 +153,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 playSoftClick();
                 onClose();
               }}
-              className="absolute inset-0 bg-[#0B1B33]/70 backdrop-blur-xl"
+              className="absolute inset-0 bg-[#122620]/75 backdrop-blur-xl"
             />
 
             {/* Panel expanding physically from center */}
@@ -165,7 +165,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               className="relative w-full max-w-md bg-white rounded-[36px] p-6 sm:p-8 shadow-2xl border-2 border-white/90 overflow-hidden z-10"
             >
               {/* Header Gradient Arc */}
-              <div className="absolute top-0 inset-x-0 h-2.5 bg-gradient-to-r from-[#61A2EE] via-[#E2F743] to-[#61A2EE]" />
+              <div className="absolute top-0 inset-x-0 h-2.5 bg-gradient-to-r from-[#4BB88E] via-[#F4F2BA] to-[#4BB88E]" />
               
               {/* Close Button */}
               <button
@@ -174,7 +174,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   playSoftClick();
                   onClose();
                 }}
-                className="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-[#0B1B33] flex items-center justify-center transition-all"
+                className="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-[#122620] flex items-center justify-center transition-all"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -182,10 +182,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               {!isSubmitted ? (
                 <div>
                   <div className="mb-6">
-                    <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3 py-1 rounded-full shadow-sm">
+                    <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3 py-1 rounded-full shadow-sm">
                       Malabar Hill · Shop No. 9
                     </span>
-                    <h3 className="text-2xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif] mt-2.5">
+                    <h3 className="text-2xl font-extrabold text-[#122620] font-['Outfit',sans-serif] mt-2.5">
                       BOOK YOUR VISIT
                     </h3>
                     <p className="text-xs text-slate-500 font-medium">
@@ -207,7 +207,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                           value={patientName}
                           onChange={(e) => setPatientName(e.target.value)}
                           placeholder="e.g. Rohini Mehta"
-                          className="w-full bg-slate-50 border border-slate-200 focus:border-[#61A2EE] focus:bg-white text-slate-800 text-xs sm:text-sm pl-10 pr-4 py-3 rounded-2xl outline-none transition-all font-medium"
+                          className="w-full bg-slate-50 border border-slate-200 focus:border-[#4BB88E] focus:bg-white text-slate-800 text-xs sm:text-sm pl-10 pr-4 py-3 rounded-2xl outline-none transition-all font-medium"
                         />
                       </div>
                     </div>
@@ -225,7 +225,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
                           placeholder="079777 76136"
-                          className="w-full bg-slate-50 border border-slate-200 focus:border-[#61A2EE] focus:bg-white text-slate-800 text-xs sm:text-sm pl-10 pr-4 py-3 rounded-2xl outline-none transition-all font-medium"
+                          className="w-full bg-slate-50 border border-slate-200 focus:border-[#4BB88E] focus:bg-white text-slate-800 text-xs sm:text-sm pl-10 pr-4 py-3 rounded-2xl outline-none transition-all font-medium"
                         />
                       </div>
                     </div>
@@ -238,7 +238,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       <select
                         value={selectedService}
                         onChange={(e) => setSelectedService(e.target.value)}
-                        className="w-full bg-slate-50 border border-slate-200 focus:border-[#61A2EE] focus:bg-white text-slate-800 text-xs sm:text-sm px-4 py-3 rounded-2xl outline-none transition-all font-medium"
+                        className="w-full bg-slate-50 border border-slate-200 focus:border-[#4BB88E] focus:bg-white text-slate-800 text-xs sm:text-sm px-4 py-3 rounded-2xl outline-none transition-all font-medium"
                       >
                         <option value="Consultation & General Checkup">Consultation & General Checkup</option>
                         <option value="Laser Teeth Whitening">Laser Teeth Whitening</option>
@@ -291,7 +291,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       whileHover={{ scale: 1.04, y: -2 }}
                       whileTap={{ scale: 0.96 }}
                       transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-                      className="w-full bg-[#E2F743] hover:bg-[#d8f035] text-[#0B1B33] font-black text-sm sm:text-base py-4 rounded-2xl shadow-lg shadow-yellow-500/20 transition-colors flex items-center justify-center gap-2 mt-2 font-['Outfit',sans-serif] border-2 border-white cursor-pointer"
+                      className="w-full bg-[#F4F2BA] hover:bg-[#eae89f] text-[#122620] font-black text-sm sm:text-base py-4 rounded-2xl shadow-lg shadow-amber-200/30 transition-colors flex items-center justify-center gap-2 mt-2 font-['Outfit',sans-serif] border-2 border-white cursor-pointer"
                     >
                       <span>Book Appointment →</span>
                     </motion.button>
@@ -307,17 +307,17 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-4">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
-                  <h3 className="text-2xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif]">
+                  <h3 className="text-2xl font-extrabold text-[#122620] font-['Outfit',sans-serif]">
                     Appointment Requested!
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 font-medium mt-2 mb-6">
-                    Thank you <strong className="text-[#0B1B33]">{patientName}</strong>. Dr. Deepal's team at Malabar Hill will confirm your {selectedService} slot ({preferredDate}, {preferredTime}) shortly at <strong>{phone}</strong>.
+                    Thank you <strong className="text-[#122620]">{patientName}</strong>. Dr. Deepal's team at Malabar Hill will confirm your {selectedService} slot ({preferredDate}, {preferredTime}) shortly at <strong>{phone}</strong>.
                   </p>
 
-                  <div className="bg-sky-50 p-4 rounded-2xl border border-sky-100 text-left text-xs text-slate-700 space-y-1 mb-6">
-                    <p className="font-bold text-[#0B1B33]">📍 Dr. Deepal's Dental Clinic</p>
+                  <div className="bg-emerald-50 p-4 rounded-2xl border border-emerald-100 text-left text-xs text-slate-700 space-y-1 mb-6">
+                    <p className="font-bold text-[#122620]">📍 Dr. Deepal's Dental Clinic</p>
                     <p>Shop No. 9, Gate No. 2, L.D. Ruparel Marg, Malabar Hill, Mumbai</p>
-                    <p className="text-[#61A2EE] font-bold">📞 Direct Clinic Line: 079777 76136</p>
+                    <p className="text-[#4BB88E] font-bold">📞 Direct Clinic Line: 079777 76136</p>
                   </div>
 
                   <motion.button
@@ -325,7 +325,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     whileHover={{ scale: 1.04, y: -2 }}
                     whileTap={{ scale: 0.96 }}
                     transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-                    className="w-full bg-[#0B1B33] text-[#E2F743] font-black text-xs py-3.5 rounded-2xl hover:bg-[#142d54] transition-colors border border-white/20 cursor-pointer"
+                    className="w-full bg-[#122620] text-[#F4F2BA] font-black text-xs py-3.5 rounded-2xl hover:bg-[#1c3a31] transition-colors border border-white/20 cursor-pointer"
                   >
                     Done & Close
                   </motion.button>

@@ -70,20 +70,20 @@ export const ServicesCarousel: React.FC<ServicesCarouselProps> = ({ onSelectTrea
       <div id="treatments" className="absolute -top-16" />
 
       {/* Subtle Depth Aura in Background */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[720px] h-[460px] bg-gradient-to-r from-[#61A2EE]/15 via-[#E2F743]/15 to-[#C8F8C3]/20 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[720px] h-[460px] bg-gradient-to-r from-[#4BB88E]/15 via-[#F4F2BA]/25 to-[#D4F3E7]/25 rounded-full blur-3xl pointer-events-none -z-10" />
 
       {/* Sparse Floating Accent Sparkles */}
       <motion.div
         animate={{ y: [-8, 8, -8], rotate: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
-        className="absolute top-8 left-[12%] text-[#61A2EE]/30 pointer-events-none hidden sm:block"
+        className="absolute top-8 left-[12%] text-[#4BB88E]/40 pointer-events-none hidden sm:block"
       >
         <Sparkles className="w-6 h-6" />
       </motion.div>
       <motion.div
         animate={{ y: [8, -8, 8], rotate: [0, -10, 0] }}
         transition={{ repeat: Infinity, duration: 7, ease: 'easeInOut', delay: 1 }}
-        className="absolute bottom-12 right-[10%] text-[#E2F743]/50 pointer-events-none hidden sm:block"
+        className="absolute bottom-12 right-[10%] text-[#F4F2BA]/70 pointer-events-none hidden sm:block"
       >
         <Sparkles className="w-5 h-5" />
       </motion.div>
@@ -99,13 +99,13 @@ export const ServicesCarousel: React.FC<ServicesCarouselProps> = ({ onSelectTrea
           className="text-center mb-5 sm:mb-8"
         >
           <PopBadge className="mb-2">
-            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
-              <Sparkles className="w-3.5 h-3.5 text-[#0B1B33]" />
+            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
+              <Sparkles className="w-3.5 h-3.5 text-[#122620]" />
               WHAT WE OFFER · 18 CLINIC SERVICES
             </span>
           </PopBadge>
 
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif] tracking-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#122620] font-['Outfit',sans-serif] tracking-tight">
             Comprehensive Dental Care, <TextHighlight color="yellow" variant="wavy">Boutique Precision</TextHighlight>
           </h2>
 
@@ -121,19 +121,19 @@ export const ServicesCarousel: React.FC<ServicesCarouselProps> = ({ onSelectTrea
               whileHover={{ scale: 1.12, x: -2 }}
               whileTap={{ scale: 0.92 }}
               transition={{ type: 'spring', damping: 14, stiffness: 300 }}
-              className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#E2F743] hover:bg-[#d5ea34] text-[#0B1B33] flex items-center justify-center shadow-md border-2 border-white transition-colors cursor-pointer"
+              className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#F4F2BA] hover:bg-[#eae79f] text-[#122620] flex items-center justify-center shadow-md border-2 border-white transition-colors cursor-pointer"
               title="Previous Service"
             >
               <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.5]" />
             </motion.button>
 
             {/* Pill Counter with Active Service Info */}
-            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-sky-100 shadow-xs font-['Outfit',sans-serif]">
-              <span className="w-2 h-2 rounded-full bg-[#E2F743] animate-pulse" />
-              <span className="text-xs font-black text-[#0B1B33]">
+            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-emerald-100 shadow-xs font-['Outfit',sans-serif]">
+              <span className="w-2 h-2 rounded-full bg-[#F4F2BA] animate-pulse" />
+              <span className="text-xs font-black text-[#122620]">
                 {activeIndex + 1} <span className="text-slate-400 font-normal">/</span> {totalServices}
               </span>
-              <span className="hidden sm:inline text-xs font-bold text-[#61A2EE]">
+              <span className="hidden sm:inline text-xs font-bold text-[#4BB88E]">
                 · {activeService.name}
               </span>
             </div>
@@ -144,7 +144,7 @@ export const ServicesCarousel: React.FC<ServicesCarouselProps> = ({ onSelectTrea
               whileHover={{ scale: 1.12, x: 2 }}
               whileTap={{ scale: 0.92 }}
               transition={{ type: 'spring', damping: 14, stiffness: 300 }}
-              className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#E2F743] hover:bg-[#d5ea34] text-[#0B1B33] flex items-center justify-center shadow-md border-2 border-white transition-colors cursor-pointer"
+              className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#F4F2BA] hover:bg-[#eae79f] text-[#122620] flex items-center justify-center shadow-md border-2 border-white transition-colors cursor-pointer"
               title="Next Service"
             >
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.5]" />
@@ -216,12 +216,12 @@ export const ServicesCarousel: React.FC<ServicesCarouselProps> = ({ onSelectTrea
                   }}
                   className={`absolute top-0 w-[240px] sm:w-[280px] h-[320px] sm:h-[370px] rounded-[30px] sm:rounded-[34px] overflow-hidden cursor-pointer select-none border-3 transition-colors duration-300 ${
                     isCenter
-                      ? 'border-[#E2F743] shadow-[0_24px_55px_-12px_rgba(11,27,51,0.38)] ring-2 ring-[#E2F743]/50'
-                      : 'border-white/80 shadow-[0_12px_30px_-10px_rgba(11,27,51,0.18)]'
+                      ? 'border-[#F4F2BA] shadow-[0_24px_55px_-12px_rgba(18,38,32,0.35)] ring-2 ring-[#4BB88E]/60'
+                      : 'border-white/80 shadow-[0_12px_30px_-10px_rgba(18,38,32,0.18)]'
                   }`}
                 >
                   {/* Card Background Container with Slight Parallax Shift */}
-                  <div className="relative w-full h-full bg-[#0B1B33] overflow-hidden">
+                  <div className="relative w-full h-full bg-[#122620] overflow-hidden">
                     <motion.img
                       src={service.imageSrc}
                       alt={service.name}
@@ -242,7 +242,7 @@ export const ServicesCarousel: React.FC<ServicesCarouselProps> = ({ onSelectTrea
                     {/* Top Left Rounded Pill: ONLY Service Name, Nothing Else */}
                     <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-10 pointer-events-none">
                       <div className="bg-black/70 backdrop-blur-md px-3 sm:px-3.5 py-1.5 rounded-full border border-white/20 shadow-md">
-                        <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-wider text-[#E2F743] font-['Outfit',sans-serif] whitespace-nowrap">
+                        <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-wider text-[#F4F2BA] font-['Outfit',sans-serif] whitespace-nowrap">
                           {service.name}
                         </span>
                       </div>
@@ -267,8 +267,8 @@ export const ServicesCarousel: React.FC<ServicesCarouselProps> = ({ onSelectTrea
                   whileTap={{ scale: 0.94 }}
                   className={`text-[11px] sm:text-xs font-extrabold px-3 py-1.5 rounded-full transition-all cursor-pointer font-['Outfit',sans-serif] border ${
                     isActive
-                      ? 'bg-[#0B1B33] text-[#E2F743] border-[#0B1B33] shadow-sm'
-                      : 'bg-white/80 hover:bg-white text-slate-700 border-sky-100 hover:border-sky-200'
+                      ? 'bg-[#122620] text-[#F4F2BA] border-[#122620] shadow-sm'
+                      : 'bg-white/80 hover:bg-white text-slate-700 border-emerald-100 hover:border-emerald-200'
                   }`}
                 >
                   {srv.name}

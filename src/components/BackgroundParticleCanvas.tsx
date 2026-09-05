@@ -37,13 +37,13 @@ export const BackgroundParticleCanvas: React.FC = () => {
 
     window.addEventListener('resize', handleResize, { passive: true });
 
-    // Palette matching Image 2: neon lime-yellow, crisp sky blue, luminous white, soft mint
+    // Palette matching modern mint & butter theme
     const colors = [
-      'rgba(226, 247, 67, 0.75)',  // Neon lime yellow
-      'rgba(98, 162, 238, 0.7)',   // Signature sky/cornflower blue
+      'rgba(75, 184, 142, 0.75)',  // Fresh mint jade green (#4BB88E)
+      'rgba(244, 242, 186, 0.85)', // Pale warm butter / cream (#F4F2BA)
       'rgba(255, 255, 255, 0.85)', // Crisp white
-      'rgba(180, 235, 255, 0.65)', // Pale cyan
-      'rgba(200, 248, 195, 0.6)',  // Soft mint green
+      'rgba(90, 204, 160, 0.65)',  // Soft seafoam mint
+      'rgba(214, 242, 230, 0.6)',  // Celadon tint
     ];
 
     const particleTypes: ('bubble' | 'sparkle' | 'microDot' | 'cross')[] = [

@@ -90,12 +90,12 @@ export const SmileResultsMirror: React.FC = () => {
           className="text-center max-w-2xl mx-auto mb-8 sm:mb-10"
         >
           <PopBadge className="mb-2.5">
-            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
-              <Eye className="w-3.5 h-3.5 text-[#0B1B33]" />
+            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
+              <Eye className="w-3.5 h-3.5 text-[#122620]" />
               PHYSICAL MIRROR INSPECTION
             </span>
           </PopBadge>
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif] tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#122620] font-['Outfit',sans-serif] tracking-tight">
             Drag the <TextHighlight color="yellow" variant="pill">Dental Mirror</TextHighlight>
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 font-medium mt-2">
@@ -109,7 +109,7 @@ export const SmileResultsMirror: React.FC = () => {
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ delay: 0.1, type: 'spring', damping: 16, stiffness: 180 }}
-          className="relative max-w-4xl mx-auto rounded-[40px] bg-white p-4 sm:p-8 border-2 border-white shadow-[0_20px_60px_-15px_rgba(11,27,51,0.15)]"
+          className="relative max-w-4xl mx-auto rounded-[40px] bg-white p-4 sm:p-8 border-2 border-white shadow-[0_20px_60px_-15px_rgba(18,38,32,0.12)]"
         >
           
           <div
@@ -127,7 +127,7 @@ export const SmileResultsMirror: React.FC = () => {
                 className="w-full h-full object-cover filter sepia-[0.35] brightness-90"
               />
               {/* Subtle BEFORE label badge */}
-              <div className="absolute top-6 left-6 bg-[#0B1B33]/90 backdrop-blur-md text-white text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider font-['Outfit',sans-serif] border border-white/20">
+              <div className="absolute top-6 left-6 bg-[#122620]/90 backdrop-blur-md text-[#F4F2BA] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider font-['Outfit',sans-serif] border border-white/20">
                 BEFORE: Discolored & Worn
               </div>
             </div>
@@ -151,8 +151,8 @@ export const SmileResultsMirror: React.FC = () => {
                 />
                 
                 {/* Luminous flare on AFTER side */}
-                <div className="absolute top-6 left-6 bg-[#E2F743] text-[#0B1B33] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider shadow-md font-['Outfit',sans-serif] flex items-center gap-1.5 border border-white">
-                  <Sparkles className="w-3.5 h-3.5 text-[#0B1B33]" />
+                <div className="absolute top-6 left-6 bg-[#F4F2BA] text-[#122620] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider shadow-md font-['Outfit',sans-serif] flex items-center gap-1.5 border border-white">
+                  <Sparkles className="w-3.5 h-3.5 text-[#122620]" />
                   AFTER: Luminous & Balanced
                 </div>
               </div>
@@ -167,12 +167,12 @@ export const SmileResultsMirror: React.FC = () => {
               <div className="w-1.5 h-16 bg-gradient-to-r from-slate-400 via-slate-100 to-slate-400 shadow-md rounded-t-full" />
 
               {/* Circular Mirror Head with Chrome Rim */}
-              <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-tr from-[#61A2EE]/30 via-white/80 to-white border-4 border-white shadow-[0_0_25px_rgba(11,27,51,0.4)] flex items-center justify-center backdrop-blur-xs">
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-tr from-[#4BB88E]/30 via-white/80 to-white border-4 border-white shadow-[0_0_25px_rgba(18,38,32,0.3)] flex items-center justify-center backdrop-blur-xs">
                 {/* Reflection highlight arc */}
                 <div className="absolute inset-1 rounded-full border-2 border-white/60 pointer-events-none" />
                 
-                <div className="flex flex-col items-center justify-center text-[#0B1B33]">
-                  <MoveHorizontal className="w-6 h-6 text-[#0B1B33] animate-pulse" />
+                <div className="flex flex-col items-center justify-center text-[#122620]">
+                  <MoveHorizontal className="w-6 h-6 text-[#122620] animate-pulse" />
                   <span className="text-[9px] font-black uppercase tracking-widest font-['Outfit',sans-serif]">
                     DRAG
                   </span>
@@ -193,7 +193,7 @@ export const SmileResultsMirror: React.FC = () => {
           </div>
 
           {/* Quick preset positions */}
-          <div className="flex items-center justify-between mt-6 pt-4 border-t border-sky-100/80">
+          <div className="flex items-center justify-between mt-6 pt-4 border-t border-emerald-100/80">
             <div className="flex items-center gap-2">
               <motion.button
                 id="preset-before-btn"
@@ -202,7 +202,7 @@ export const SmileResultsMirror: React.FC = () => {
                 whileTap={{ scale: 0.94 }}
                 transition={{ type: 'spring', damping: 12, stiffness: 300 }}
                 className={`text-xs font-black px-4 py-2 rounded-full transition-colors cursor-pointer ${
-                  sliderPos === 0 ? 'bg-[#0B1B33] text-[#E2F743] shadow-sm' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  sliderPos === 0 ? 'bg-[#122620] text-[#F4F2BA] shadow-sm' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                 }`}
               >
                 Full Before
@@ -214,7 +214,7 @@ export const SmileResultsMirror: React.FC = () => {
                 whileTap={{ scale: 0.94 }}
                 transition={{ type: 'spring', damping: 12, stiffness: 300 }}
                 className={`text-xs font-black px-4 py-2 rounded-full transition-colors cursor-pointer ${
-                  sliderPos === 50 ? 'bg-[#0B1B33] text-[#E2F743] shadow-sm' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  sliderPos === 50 ? 'bg-[#122620] text-[#F4F2BA] shadow-sm' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                 }`}
               >
                 Split 50/50
@@ -226,14 +226,14 @@ export const SmileResultsMirror: React.FC = () => {
                 whileTap={{ scale: 0.94 }}
                 transition={{ type: 'spring', damping: 12, stiffness: 300 }}
                 className={`text-xs font-black px-4 py-2 rounded-full transition-colors cursor-pointer ${
-                  sliderPos === 100 ? 'bg-[#0B1B33] text-[#E2F743] shadow-sm' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  sliderPos === 100 ? 'bg-[#122620] text-[#F4F2BA] shadow-sm' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                 }`}
               >
                 Full After
               </motion.button>
             </div>
 
-            <span className="text-xs font-black text-[#61A2EE] font-['Outfit',sans-serif]">
+            <span className="text-xs font-black text-[#4BB88E] font-['Outfit',sans-serif]">
               {Math.round(sliderPos)}% Reveal
             </span>
           </div>

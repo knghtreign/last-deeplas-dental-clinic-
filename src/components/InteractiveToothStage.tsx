@@ -41,10 +41,10 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
   };
 
   return (
-    <section id="interactive-stage" className="relative py-8 sm:py-12 px-3 sm:px-6 lg:px-8 bg-gradient-to-b from-[#EEF7FC] via-white to-[#EEF7FC] overflow-hidden z-10">
+    <section id="interactive-stage" className="relative py-8 sm:py-12 px-3 sm:px-6 lg:px-8 bg-gradient-to-b from-[#EAF6F1] via-white to-[#EAF6F1] overflow-hidden z-10">
       
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#61A2EE]/15 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#4BB88E]/15 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-6xl mx-auto">
         
@@ -56,11 +56,11 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
           transition={{ type: 'spring', damping: 14, stiffness: 200 }}
           className="text-center max-w-2xl mx-auto mb-6 sm:mb-10"
         >
-          <span className="inline-flex items-center gap-1.5 text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3.5 py-1.5 rounded-full mb-2.5 shadow-sm font-['Outfit',sans-serif]">
-            <Zap className="w-3.5 h-3.5 text-[#0B1B33] fill-[#0B1B33]" />
+          <span className="inline-flex items-center gap-1.5 text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3.5 py-1.5 rounded-full mb-2.5 shadow-sm font-['Outfit',sans-serif]">
+            <Zap className="w-3.5 h-3.5 text-[#122620] fill-[#122620]" />
             INTERACTIVE DENTAL SIMULATION
           </span>
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif] tracking-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#122620] font-['Outfit',sans-serif] tracking-tight">
             Watch How We <TextHighlight color="yellow" variant="wavy">Transform</TextHighlight> You
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 font-medium mt-1.5">
@@ -91,12 +91,12 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                 transition={{ type: 'spring', damping: 14, stiffness: 180 }}
                 className={`relative px-3.5 sm:px-6 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-black tracking-wider transition-all duration-300 font-['Outfit',sans-serif] cursor-pointer select-none border ${
                   isSelected
-                    ? 'bg-[#0B1B33] text-[#E2F743] shadow-lg shadow-sky-950/20 border-[#0B1B33] z-10'
-                    : 'bg-white text-slate-700 hover:bg-sky-50 hover:text-[#0B1B33] border-sky-100 shadow-sm'
+                    ? 'bg-[#122620] text-[#F4F2BA] shadow-lg shadow-emerald-950/20 border-[#122620] z-10'
+                    : 'bg-white text-slate-700 hover:bg-emerald-50 hover:text-[#122620] border-emerald-100 shadow-sm'
                 }`}
               >
                 <span className="flex items-center gap-1.5">
-                  {isSelected && <span className="w-2 h-2 rounded-full bg-[#E2F743] animate-pulse" />}
+                  {isSelected && <span className="w-2 h-2 rounded-full bg-[#F4F2BA] animate-pulse" />}
                   {treatment.name}
                 </span>
               </motion.button>
@@ -110,11 +110,11 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ delay: 0.15, type: 'spring', damping: 16, stiffness: 200 }}
-          className="relative bg-white/95 rounded-[28px] sm:rounded-[44px] border-2 border-sky-100 shadow-[0_20px_60px_-15px_rgba(11,27,51,0.08)] p-4 sm:p-10 overflow-hidden"
+          className="relative bg-white/95 rounded-[28px] sm:rounded-[44px] border-2 border-emerald-100 shadow-[0_20px_60px_-15px_rgba(18,38,32,0.08)] p-4 sm:p-10 overflow-hidden"
         >
           
           {/* Subtle Stage Lighting */}
-          <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#61A2EE]/10 to-transparent pointer-events-none" />
+          <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#4BB88E]/15 to-transparent pointer-events-none" />
 
           {/* Tooth 3D Stage Canvas */}
           <div className="relative min-h-[300px] sm:min-h-[420px] flex items-center justify-center">
@@ -138,8 +138,8 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                       <defs>
                         <linearGradient id="whiteningEnamel" x1="0%" y1="0%" x2="100%" y2="100%">
                           <stop offset="0%" stopColor="#ffffff" />
-                          <stop offset="50%" stopColor="#f4faff" />
-                          <stop offset="100%" stopColor="#dceeff" />
+                          <stop offset="50%" stopColor="#f7fbf9" />
+                          <stop offset="100%" stopColor="#e3f4ec" />
                         </linearGradient>
                         <linearGradient id="shinyLaser" x1="0%" y1="0%" x2="100%" y2="0%">
                           <stop offset="0%" stopColor="rgba(56, 189, 248, 0)" />
@@ -151,7 +151,7 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                       <path
                         d="M 40,80 C 40,40 70,25 100,45 C 130,25 160,40 160,80 C 160,130 150,170 140,210 C 130,225 115,220 110,180 C 105,150 95,150 90,180 C 85,220 70,225 60,210 C 50,170 40,130 40,80 Z"
                         fill="url(#whiteningEnamel)"
-                        stroke="#61A2EE"
+                        stroke="#4BB88E"
                         strokeWidth="3"
                       />
                       {/* Crown highlights */}
@@ -170,7 +170,7 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                       initial={{ scale: 0, opacity: 0 }}
                       animate={{ scale: [0, 1.4, 1], opacity: [0, 1, 0.9] }}
                       transition={{ delay: 1.2, duration: 0.6 }}
-                      className="absolute top-4 right-6 text-[#E2F743]"
+                      className="absolute top-4 right-6 text-[#F4F2BA]"
                     >
                       <Sparkles className="w-10 h-10 animate-spin" style={{ animationDuration: '8s' }} />
                     </motion.div>
@@ -178,7 +178,7 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                       initial={{ scale: 0, opacity: 0 }}
                       animate={{ scale: [0, 1.2, 0.9], opacity: [0, 1, 0.9] }}
                       transition={{ delay: 1.5, duration: 0.5 }}
-                      className="absolute bottom-20 left-4 text-[#61A2EE]"
+                      className="absolute bottom-20 left-4 text-[#4BB88E]"
                     >
                       <Sparkles className="w-8 h-8" />
                     </motion.div>
@@ -196,8 +196,8 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                     transition={{ duration: 1.8, ease: 'easeInOut' }}
                     className="absolute z-20 pointer-events-none flex items-center"
                   >
-                    <div className="w-36 h-2 bg-gradient-to-r from-[#61A2EE] via-sky-200 to-white shadow-[0_0_20px_#61A2EE] rounded-full" />
-                    <div className="w-8 h-8 rounded-full bg-[#E2F743] shadow-[0_0_25px_#E2F743] border-2 border-white animate-ping" />
+                    <div className="w-36 h-2 bg-gradient-to-r from-[#4BB88E] via-emerald-200 to-white shadow-[0_0_20px_#4BB88E] rounded-full" />
+                    <div className="w-8 h-8 rounded-full bg-[#F4F2BA] shadow-[0_0_25px_#F4F2BA] border-2 border-white animate-ping" />
                   </motion.div>
                 </div>
               )}
@@ -235,7 +235,7 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                         <path
                           d="M 44,75 C 44,42 72,28 100,46 C 128,28 156,42 156,75 C 156,120 148,160 138,190 C 105,185 95,185 62,190 C 52,160 44,120 44,75 Z"
                           fill="url(#veneerPorcelain)"
-                          stroke="#61A2EE"
+                          stroke="#4BB88E"
                           strokeWidth="3.5"
                         />
                         {/* Luminous reflection highlight */}
@@ -252,7 +252,7 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                         initial={{ opacity: 0, scale: 0 }}
                         animate={{ opacity: [0, 1, 0], scale: [0.5, 2, 2.5] }}
                         transition={{ delay: 0.9, duration: 0.6 }}
-                        className="absolute inset-0 m-auto w-12 h-12 bg-[#E2F743]/60 rounded-full blur-sm"
+                        className="absolute inset-0 m-auto w-12 h-12 bg-[#F4F2BA]/70 rounded-full blur-sm"
                       />
                     </motion.div>
                   </div>
@@ -275,14 +275,14 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                         <defs>
                           <linearGradient id="zirconiaCrown" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" stopColor="#ffffff" />
-                            <stop offset="70%" stopColor="#edf6ff" />
-                            <stop offset="100%" stopColor="#cfe6ff" />
+                            <stop offset="70%" stopColor="#f5faf7" />
+                            <stop offset="100%" stopColor="#d4f3e7" />
                           </linearGradient>
                         </defs>
                         <path
                           d="M 20,75 C 20,35 50,15 80,35 C 110,15 140,35 140,75 C 140,88 120,95 80,95 C 40,95 20,88 20,75 Z"
                           fill="url(#zirconiaCrown)"
-                          stroke="#61A2EE"
+                          stroke="#4BB88E"
                           strokeWidth="3"
                         />
                         <path d="M 40,45 Q 80,30 120,45" fill="none" stroke="white" strokeWidth="4" strokeLinecap="round" />
@@ -294,7 +294,7 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                       initial={{ scaleY: 0 }}
                       animate={{ scaleY: 1 }}
                       transition={{ delay: 0.3, duration: 0.3 }}
-                      className="w-16 h-6 bg-gradient-to-r from-amber-300 via-[#E2F743] to-amber-400 rounded-sm shadow-md z-10 -mt-2 border border-amber-500/40"
+                      className="w-16 h-6 bg-gradient-to-r from-amber-300 via-[#F4F2BA] to-amber-400 rounded-sm shadow-md z-10 -mt-2 border border-amber-500/40"
                     />
 
                     {/* Titanium Biocompatible Threaded Root Screw */}
@@ -309,14 +309,14 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                           <linearGradient id="titaniumScrew" x1="0%" y1="0%" x2="100%" y2="0%">
                             <stop offset="0%" stopColor="#334155" />
                             <stop offset="50%" stopColor="#94a3b8" />
-                            <stop offset="100%" stopColor="#0B1B33" />
+                            <stop offset="100%" stopColor="#122620" />
                           </linearGradient>
                         </defs>
                         {/* Threaded screw silhouette */}
                         <path
                           d="M 25,5 L 75,5 L 70,25 L 76,32 L 68,45 L 74,52 L 66,65 L 72,72 L 64,85 L 70,92 L 55,120 L 45,120 L 30,92 L 36,85 L 28,72 L 34,65 L 26,52 L 32,45 L 24,32 L 30,25 Z"
                           fill="url(#titaniumScrew)"
-                          stroke="#0B1B33"
+                          stroke="#122620"
                           strokeWidth="2"
                         />
                         {/* Precision thread marks */}
@@ -340,16 +340,16 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                       {/* Outer translucent enamel */}
                       <path
                         d="M 40,80 C 40,40 70,25 100,45 C 130,25 160,40 160,80 C 160,130 150,170 140,210 C 130,225 115,220 110,180 C 105,150 95,150 90,180 C 85,220 70,225 60,210 C 50,170 40,130 40,80 Z"
-                        fill="#f0f7ff"
-                        stroke="#61A2EE"
+                        fill="#f2f9f5"
+                        stroke="#4BB88E"
                         strokeWidth="3"
                       />
                       
                       {/* Internal Nerve / Canal Chamber */}
                       <path
                         d="M 80,75 C 80,65 90,60 100,60 C 110,60 120,65 120,75 C 120,95 115,120 125,185 C 118,188 112,175 110,140 C 105,120 95,120 90,140 C 88,175 82,188 75,185 C 85,120 80,95 80,75 Z"
-                        fill="#dbeafe"
-                        stroke="#2563eb"
+                        fill="#d4f3e7"
+                        stroke="#2d7a5b"
                         strokeWidth="2"
                       />
                     </svg>
@@ -361,7 +361,7 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                       transition={{ duration: 1.2, delay: 0.3 }}
                       className="absolute inset-x-0 top-16 bottom-12 flex justify-center pointer-events-none"
                     >
-                      <div className="w-3 bg-gradient-to-b from-[#61A2EE] via-[#E2F743] to-[#0B1B33] rounded-full shadow-[0_0_15px_#61A2EE] animate-pulse" />
+                      <div className="w-3 bg-gradient-to-b from-[#4BB88E] via-[#F4F2BA] to-[#122620] rounded-full shadow-[0_0_15px_#4BB88E] animate-pulse" />
                     </motion.div>
 
                     {/* Sealed clean canal notification */}
@@ -369,9 +369,9 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ delay: 1.4, type: 'spring' }}
-                      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#0B1B33] text-[#E2F743] text-[11px] font-extrabold px-3.5 py-1.5 rounded-full shadow-lg border border-[#E2F743]/40 flex items-center gap-1.5 whitespace-nowrap"
+                      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#122620] text-[#F4F2BA] text-[11px] font-extrabold px-3.5 py-1.5 rounded-full shadow-lg border border-[#F4F2BA]/40 flex items-center gap-1.5 whitespace-nowrap"
                     >
-                      <Check className="w-3.5 h-3.5 text-[#E2F743]" />
+                      <Check className="w-3.5 h-3.5 text-[#F4F2BA]" />
                       <span>Nerve Protected & Sealed</span>
                     </motion.div>
                   </div>
@@ -386,7 +386,7 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                       <path
                         d="M 40,80 C 40,40 70,25 100,45 C 130,25 160,40 160,80 C 160,130 150,170 140,210 C 130,225 115,220 110,180 C 105,150 95,150 90,180 C 85,220 70,225 60,210 C 50,170 40,130 40,80 Z"
                         fill="#f7fbff"
-                        stroke="#61A2EE"
+                        stroke="#4BB88E"
                         strokeWidth="3"
                       />
                     </svg>
@@ -413,8 +413,8 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                       {/* Brush instrument tip */}
                       <div className="flex items-center">
                         <div className="w-24 h-4 bg-gradient-to-r from-slate-400 to-slate-200 rounded-full shadow" />
-                        <div className="w-8 h-8 rounded-full bg-[#E2F743] flex items-center justify-center shadow-lg border-2 border-[#0B1B33] animate-spin">
-                          <Sparkles className="w-5 h-5 text-[#0B1B33]" />
+                        <div className="w-8 h-8 rounded-full bg-[#F4F2BA] flex items-center justify-center shadow-lg border-2 border-[#122620] animate-spin">
+                          <Sparkles className="w-5 h-5 text-[#122620]" />
                         </div>
                       </div>
                     </motion.div>
@@ -427,7 +427,7 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
                         animate={{ y: -60 - i * 15, opacity: [0, 1, 0], scale: 1.2 }}
                         transition={{ duration: 1.4, delay: 0.2 + i * 0.2, repeat: 1 }}
                         style={{ left: `${30 + i * 10}%`, top: '45%' }}
-                        className="absolute w-4 h-4 rounded-full bg-cyan-300/80 border border-white backdrop-blur-sm pointer-events-none"
+                        className="absolute w-4 h-4 rounded-full bg-emerald-300/80 border border-white backdrop-blur-sm pointer-events-none"
                       />
                     ))}
                   </div>
@@ -443,7 +443,7 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
               whileHover={{ scale: 1.08, y: -2 }}
               whileTap={{ scale: 0.94 }}
               transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-              className="absolute top-4 right-4 flex items-center gap-1.5 bg-white hover:bg-[#0B1B33] hover:text-[#E2F743] px-3.5 py-2 rounded-full text-xs font-extrabold text-[#0B1B33] shadow-sm border border-sky-100 transition-colors cursor-pointer"
+              className="absolute top-4 right-4 flex items-center gap-1.5 bg-white hover:bg-[#122620] hover:text-[#F4F2BA] px-3.5 py-2 rounded-full text-xs font-extrabold text-[#122620] shadow-sm border border-emerald-100 transition-colors cursor-pointer"
             >
               <RefreshCw className="w-3.5 h-3.5" />
               <span>Replay Demo</span>
@@ -451,21 +451,21 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
           </div>
 
           {/* Treatment Description Card */}
-          <div className="mt-8 pt-6 border-t border-sky-100/80 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+          <div className="mt-8 pt-6 border-t border-emerald-100/80 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
             <motion.div
               whileHover={{ scale: 1.01 }}
               transition={{ type: 'spring', damping: 14, stiffness: 200 }}
               className="space-y-1.5 max-w-lg text-left"
             >
               <div className="flex items-center gap-2">
-                <span className="text-xs font-extrabold uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3 py-1 rounded-full font-['Outfit',sans-serif]">
+                <span className="text-xs font-extrabold uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3 py-1 rounded-full font-['Outfit',sans-serif]">
                   {currentInfo.badge}
                 </span>
                 <span className="text-xs text-slate-500 font-semibold">
                   ⏱ {currentInfo.duration}
                 </span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif]">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#122620] font-['Outfit',sans-serif]">
                 {currentInfo.tagline}
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
@@ -480,9 +480,9 @@ export const InteractiveToothStage: React.FC<InteractiveToothStageProps> = ({
               whileHover={{ scale: 1.06, y: -2 }}
               whileTap={{ scale: 0.94 }}
               transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-              className="inline-flex items-center justify-center gap-2 bg-[#0B1B33] hover:bg-[#1a2f52] text-[#E2F743] font-extrabold text-sm px-7 py-4 rounded-full shadow-lg transition-colors shrink-0 font-['Outfit',sans-serif] border-2 border-white cursor-pointer"
+              className="inline-flex items-center justify-center gap-2 bg-[#122620] hover:bg-[#1b3d33] text-[#F4F2BA] font-extrabold text-sm px-7 py-4 rounded-full shadow-lg transition-colors shrink-0 font-['Outfit',sans-serif] border-2 border-white cursor-pointer"
             >
-              <Sparkles className="w-4 h-4 text-[#E2F743]" />
+              <Sparkles className="w-4 h-4 text-[#F4F2BA]" />
               <span>Book {currentInfo.name}</span>
             </motion.button>
           </div>

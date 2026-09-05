@@ -64,7 +64,7 @@ export const ClinicShowcaseStack: React.FC = () => {
       className="relative py-10 sm:py-14 -mt-4 sm:-mt-6 px-3 sm:px-6 lg:px-8 overflow-hidden sm:overflow-visible z-10"
     >
       {/* Background Seamless Transition Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-to-b from-[#61A2EE]/15 via-[#C8F8C3]/15 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-to-b from-[#4BB88E]/15 via-[#F4F2BA]/15 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-5xl mx-auto text-center">
         
@@ -77,12 +77,12 @@ export const ClinicShowcaseStack: React.FC = () => {
           className="mb-6 sm:mb-8"
         >
           <PopBadge className="mb-2">
-            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-4 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
-              <Layers className="w-3.5 h-3.5 text-[#0B1B33]" />
+            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-4 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
+              <Layers className="w-3.5 h-3.5 text-[#122620]" />
               THE SPACE · MALABAR HILL
             </span>
           </PopBadge>
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif] tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#122620] font-['Outfit',sans-serif] tracking-tight">
             Designed for <TextHighlight color="yellow" variant="wavy">Serene Healing</TextHighlight>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 font-medium mt-1.5">
@@ -114,9 +114,9 @@ export const ClinicShowcaseStack: React.FC = () => {
             onClick={(e) => { e.stopPropagation(); playSoftClick(); }}
             className="absolute -top-2 sm:-top-5 left-0 sm:-left-6 z-30 pointer-events-auto group hidden xs:block"
           >
-            <div className="flex items-center gap-1.5 bg-white/95 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full shadow-md border border-sky-100 group-hover:border-[#61A2EE] transition-all">
-              <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-[#E2F743] animate-pulse" />
-              <span className="text-[10px] sm:text-[11px] font-black text-[#0B1B33] font-['Outfit',sans-serif] tracking-wide">
+            <div className="flex items-center gap-1.5 bg-white/95 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full shadow-md border border-emerald-100 group-hover:border-[#4BB88E] transition-all">
+              <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-[#F4F2BA] animate-pulse" />
+              <span className="text-[10px] sm:text-[11px] font-black text-[#122620] font-['Outfit',sans-serif] tracking-wide">
                 🌿 Sunlit Park Views
               </span>
             </div>
@@ -134,9 +134,9 @@ export const ClinicShowcaseStack: React.FC = () => {
             onClick={(e) => { e.stopPropagation(); playSoftClick(); }}
             className="absolute -top-1 sm:-top-4 right-0 sm:-right-6 z-30 pointer-events-auto group hidden xs:block"
           >
-            <div className="flex items-center gap-1.5 bg-white/95 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full shadow-md border border-sky-100 group-hover:border-[#61A2EE] transition-all">
-              <Cpu className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#61A2EE]" />
-              <span className="text-[10px] sm:text-[11px] font-black text-[#0B1B33] font-['Outfit',sans-serif] tracking-wide">
+            <div className="flex items-center gap-1.5 bg-white/95 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full shadow-md border border-emerald-100 group-hover:border-[#4BB88E] transition-all">
+              <Cpu className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#4BB88E]" />
+              <span className="text-[10px] sm:text-[11px] font-black text-[#122620] font-['Outfit',sans-serif] tracking-wide">
                 3D Digital Intraoral Scan
               </span>
             </div>
@@ -154,9 +154,9 @@ export const ClinicShowcaseStack: React.FC = () => {
             onClick={(e) => { e.stopPropagation(); playSoftClick(); }}
             className="absolute -bottom-2 sm:-bottom-5 left-0 sm:-left-4 z-30 pointer-events-auto group hidden xs:block"
           >
-            <div className="flex items-center gap-1.5 bg-white/95 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full shadow-md border border-sky-100 group-hover:border-[#61A2EE] transition-all">
-              <Wind className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#61A2EE]" />
-              <span className="text-[10px] sm:text-[11px] font-black text-[#0B1B33] font-['Outfit',sans-serif] tracking-wide">
+            <div className="flex items-center gap-1.5 bg-white/95 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full shadow-md border border-emerald-100 group-hover:border-[#4BB88E] transition-all">
+              <Wind className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#4BB88E]" />
+              <span className="text-[10px] sm:text-[11px] font-black text-[#122620] font-['Outfit',sans-serif] tracking-wide">
                 🍃 Quiet & Odour-Free
               </span>
             </div>
@@ -174,9 +174,9 @@ export const ClinicShowcaseStack: React.FC = () => {
             onClick={(e) => { e.stopPropagation(); playSoftClick(); }}
             className="absolute -bottom-1 sm:-bottom-4 right-0 sm:-right-4 z-30 pointer-events-auto group hidden xs:block"
           >
-            <div className="flex items-center gap-1.5 bg-white/95 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full shadow-md border border-sky-100 group-hover:border-[#61A2EE] transition-all">
-              <ShieldCheck className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#0B1B33]" />
-              <span className="text-[10px] sm:text-[11px] font-black text-[#0B1B33] font-['Outfit',sans-serif] tracking-wide">
+            <div className="flex items-center gap-1.5 bg-white/95 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full shadow-md border border-emerald-100 group-hover:border-[#4BB88E] transition-all">
+              <ShieldCheck className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#122620]" />
+              <span className="text-[10px] sm:text-[11px] font-black text-[#122620] font-['Outfit',sans-serif] tracking-wide">
                 100% Pain-Free Protocols
               </span>
             </div>
@@ -224,7 +224,7 @@ export const ClinicShowcaseStack: React.FC = () => {
                     mass: 0.8
                   }}
                   whileHover={isFront ? { scale: 1.03, rotate: rot * 0.4 } : {}}
-                  className="absolute w-[280px] sm:w-[390px] h-[240px] sm:h-[310px] rounded-[28px] sm:rounded-[34px] overflow-hidden bg-white p-2 sm:p-2.5 shadow-[0_20px_50px_-14px_rgba(11,27,51,0.22)] border-2 border-white ring-1 ring-sky-100"
+                  className="absolute w-[280px] sm:w-[390px] h-[240px] sm:h-[310px] rounded-[28px] sm:rounded-[34px] overflow-hidden bg-white p-2 sm:p-2.5 shadow-[0_20px_50px_-14px_rgba(18,38,32,0.18)] border-2 border-white ring-1 ring-emerald-100"
                   style={{
                     zIndex,
                     transformOrigin: 'bottom center',
@@ -240,17 +240,17 @@ export const ClinicShowcaseStack: React.FC = () => {
                     />
 
                     {/* Gradient Overlay & Minimal Photographic Tag */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B1B33]/90 via-transparent to-transparent flex flex-col justify-between p-4 sm:p-5">
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#122620]/90 via-transparent to-transparent flex flex-col justify-between p-4 sm:p-5">
                       
                       {/* Top Pill Tag */}
                       <div className="flex justify-between items-start">
-                        <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3 py-1 rounded-full shadow-sm font-['Outfit',sans-serif]">
+                        <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3 py-1 rounded-full shadow-sm font-['Outfit',sans-serif]">
                           {card.tag}
                         </span>
                         
                         {isFront && (
                           <div className="w-8 h-8 rounded-full bg-white/25 backdrop-blur-md text-white flex items-center justify-center text-xs shadow-inner">
-                            <RotateCw className="w-4 h-4 text-[#E2F743]" />
+                            <RotateCw className="w-4 h-4 text-[#F4F2BA]" />
                           </div>
                         )}
                       </div>
@@ -260,7 +260,7 @@ export const ClinicShowcaseStack: React.FC = () => {
                         <h4 className="text-base sm:text-lg font-extrabold font-['Outfit',sans-serif] text-white leading-tight">
                           {card.title}
                         </h4>
-                        <p className="text-xs text-[#61A2EE] font-bold line-clamp-1 mt-0.5">
+                        <p className="text-xs text-[#F4F2BA] font-bold line-clamp-1 mt-0.5">
                           {card.subtitle}
                         </p>
                       </div>
@@ -282,9 +282,9 @@ export const ClinicShowcaseStack: React.FC = () => {
             whileHover={{ scale: 1.08, y: -2 }}
             whileTap={{ scale: 0.94 }}
             transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-            className="inline-flex items-center gap-2 bg-[#0B1B33] hover:bg-[#142d54] text-white text-[11px] font-black uppercase tracking-wider px-5 py-2.5 rounded-full shadow-md border border-white/20 transition-colors font-['Outfit',sans-serif] cursor-pointer"
+            className="inline-flex items-center gap-2 bg-[#122620] hover:bg-[#1b3d33] text-[#F4F2BA] text-[11px] font-black uppercase tracking-wider px-5 py-2.5 rounded-full shadow-md border border-white/20 transition-colors font-['Outfit',sans-serif] cursor-pointer"
           >
-            <RotateCw className="w-3.5 h-3.5 text-[#E2F743]" />
+            <RotateCw className="w-3.5 h-3.5 text-[#F4F2BA]" />
             <span>Tap To Flip Photograph</span>
           </motion.button>
         </div>

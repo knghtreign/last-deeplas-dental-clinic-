@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@layer base {
+  :root {
+    --clinic-mint: #4BB88E;
+    --clinic-mint-dark: #2A6E53;
+    --clinic-mint-light: #EAF6F1;
+    --clinic-butter: #F4F2BA;
+    --clinic-butter-dark: #DDD98E;
+    --clinic-butter-light: #FAF8D8;
+    --clinic-forest: #122620;
+    --clinic-bg: #F5F9F7;
+  }
+
+  body {
+    background-color: #F5F9F7;
+    color: #122620;
+  }
+
+  ::selection {
+    background-color: #F4F2BA;
+    color: #122620;
+  }
+}

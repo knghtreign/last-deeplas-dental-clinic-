@@ -14,7 +14,7 @@ export const StaggerHeading: React.FC<StaggerHeadingProps> = ({
   className = '',
   delay = 0,
   highlightWords = [],
-  highlightColor = '#E2F743',
+  highlightColor = '#F4F2BA',
 }) => {
   const words = text.split(' ');
 
@@ -69,7 +69,7 @@ export const StaggerHeading: React.FC<StaggerHeadingProps> = ({
             variants={wordVariants}
             className={`inline-block ${
               isHighlighted
-                ? 'relative text-inherit font-black underline decoration-[3.5px] decoration-[#E2F743] underline-offset-4 decoration-skip-ink-none'
+                ? 'relative text-inherit font-black underline decoration-[3.5px] decoration-[#F4F2BA] underline-offset-4 decoration-skip-ink-none'
                 : ''
             }`}
           >
@@ -97,13 +97,13 @@ export const TextHighlight: React.FC<TextHighlightProps> = ({
   const getColorHex = (c: string) => {
     switch (c) {
       case 'yellow':
-        return '#E2F743';
+        return '#F4F2BA';
       case 'blue':
-        return '#61A2EE';
+        return '#4BB88E';
       case 'mint':
-        return '#C8F8C3';
+        return '#D4F3E7';
       case 'dark':
-        return '#0B1B33';
+        return '#122620';
       default:
         return c;
     }
@@ -113,7 +113,7 @@ export const TextHighlight: React.FC<TextHighlightProps> = ({
 
   if (variant === 'pill') {
     return (
-      <span className={`relative inline-block px-2 py-0.5 mx-0.5 rounded-lg font-black text-[#0B1B33] ${className}`}>
+      <span className={`relative inline-block px-2 py-0.5 mx-0.5 rounded-lg font-black text-[#122620] ${className}`}>
         <motion.span
           initial={{ scaleX: 0, opacity: 0 }}
           whileInView={{ scaleX: 1, opacity: 1 }}
@@ -134,7 +134,7 @@ export const TextHighlight: React.FC<TextHighlightProps> = ({
           initial={{ opacity: 0, x: -4 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false, amount: 0.2 }}
-          className="text-[#61A2EE] mr-0.5 select-none font-light"
+          className="text-[#4BB88E] mr-0.5 select-none font-light"
         >
           [
         </motion.span>
@@ -143,7 +143,7 @@ export const TextHighlight: React.FC<TextHighlightProps> = ({
           initial={{ opacity: 0, x: 4 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false, amount: 0.2 }}
-          className="text-[#61A2EE] ml-0.5 select-none font-light"
+          className="text-[#4BB88E] ml-0.5 select-none font-light"
         >
           ]
         </motion.span>
@@ -241,14 +241,14 @@ export const UnderlineTag: React.FC<UnderlineTagProps> = ({
   className = '',
 }) => {
   const colorMap = {
-    yellow: 'decoration-[#E2F743]',
-    blue: 'decoration-[#61A2EE]',
-    mint: 'decoration-[#C8F8C3]',
+    yellow: 'decoration-[#F4F2BA]',
+    blue: 'decoration-[#4BB88E]',
+    mint: 'decoration-[#D4F3E7]',
   };
 
   return (
     <span
-      className={`font-black text-[#0B1B33] underline decoration-3 underline-offset-4 decoration-skip-ink-none ${colorMap[color]} ${className}`}
+      className={`font-black text-[#122620] underline decoration-3 underline-offset-4 decoration-skip-ink-none ${colorMap[color]} ${className}`}
     >
       {text}
     </span>

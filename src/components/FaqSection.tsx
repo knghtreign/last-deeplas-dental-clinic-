@@ -33,7 +33,7 @@ export const FaqSection: React.FC = () => {
           <p className="pt-2 text-slate-700 leading-relaxed">
             We offer 18 specialized dental services including{' '}
             <TextHighlight color="yellow" variant="underline">Teeth Whitening</TextHighlight>,{' '}
-            <TextHighlight color="blue" variant="underline">Bonding</TextHighlight>, Check-ups, Cosmetic Procedures,{' '}
+            <TextHighlight color="mint" variant="underline">Bonding</TextHighlight>, Check-ups, Cosmetic Procedures,{' '}
             <TextHighlight color="mint" variant="underline">Dental Implants</TextHighlight>, Dentures & Bridges, Emergency Care, Extractions, Fillings & Sealants, Mouth Guards, Oral Surgery,{' '}
             <TextHighlight color="yellow" variant="wavy">Paediatrics</TextHighlight>, Root Canals, Teeth Cleaning, Teeth Reshaping, Veneers & Crowns, and digital X-Rays.
           </p>
@@ -56,7 +56,7 @@ export const FaqSection: React.FC = () => {
         return (
           <p className="pt-2 text-slate-700 leading-relaxed">
             We are situated at{' '}
-            <TextHighlight color="blue" variant="bracket">Shop No. 9, Gate No. 2</TextHighlight>, L.D. Ruparel Marg, directly adjacent to{' '}
+            <TextHighlight color="mint" variant="bracket">Shop No. 9, Gate No. 2</TextHighlight>, L.D. Ruparel Marg, directly adjacent to{' '}
             <TextHighlight color="yellow" variant="underline">Priyadarshini Park in Malabar Hill, Mumbai</TextHighlight>, with convenient curbside parking.
           </p>
         );
@@ -65,7 +65,7 @@ export const FaqSection: React.FC = () => {
           <p className="pt-2 text-slate-700 leading-relaxed">
             You can instantly reserve your preferred slot via the{' '}
             <TextHighlight color="yellow" variant="pill">Book Consultation</TextHighlight> button on this page, or reach our clinic desk directly at{' '}
-            <a href="tel:+917977776136" className="font-black text-[#0B1B33] underline decoration-[#61A2EE] decoration-2 underline-offset-2">079777 76136</a>.
+            <a href="tel:+917977776136" className="font-black text-[#122620] underline decoration-[#4BB88E] decoration-2 underline-offset-2">079777 76136</a>.
           </p>
         );
       default:
@@ -77,7 +77,7 @@ export const FaqSection: React.FC = () => {
     <section id="faq" className="relative py-10 sm:py-16 -mt-2 sm:-mt-4 px-3 sm:px-6 lg:px-8 overflow-visible z-10">
       
       {/* Subtle Ambient Background Gradient */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[360px] bg-[#61A2EE]/15 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[360px] bg-[#4BB88E]/15 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-3xl mx-auto">
         
@@ -90,12 +90,12 @@ export const FaqSection: React.FC = () => {
           className="text-center mb-6 sm:mb-10"
         >
           <PopBadge className="mb-2">
-            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
-              <HelpCircle className="w-3.5 h-3.5 text-[#0B1B33]" />
+            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
+              <HelpCircle className="w-3.5 h-3.5 text-[#122620]" />
               PATIENT INQUIRIES
             </span>
           </PopBadge>
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif] tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#122620] font-['Outfit',sans-serif] tracking-tight">
             Frequently Asked <TextHighlight color="yellow" variant="wavy">Questions</TextHighlight>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 font-medium mt-1.5">
@@ -122,8 +122,8 @@ export const FaqSection: React.FC = () => {
                 }}
                 className={`rounded-[22px] sm:rounded-[26px] transition-all duration-300 border-2 ${
                   isOpen
-                    ? 'bg-white shadow-[0_12px_30px_-8px_rgba(11,27,51,0.12)] border-[#61A2EE]'
-                    : 'bg-white/85 hover:bg-white border-white hover:border-[#61A2EE]/40 shadow-sm'
+                    ? 'bg-white shadow-[0_12px_30px_-8px_rgba(18,38,32,0.1)] border-[#4BB88E]'
+                    : 'bg-white/85 hover:bg-white border-white hover:border-[#4BB88E]/40 shadow-sm'
                 }`}
               >
                 {/* Question Trigger */}
@@ -134,7 +134,7 @@ export const FaqSection: React.FC = () => {
                   className="w-full text-left py-3.5 sm:py-4 px-4 sm:px-6 flex items-center justify-between gap-3 cursor-pointer select-none"
                 >
                   <span className={`text-xs sm:text-sm md:text-base font-extrabold font-['Outfit',sans-serif] transition-colors ${
-                    isOpen ? 'text-[#0B1B33]' : 'text-slate-700'
+                    isOpen ? 'text-[#122620]' : 'text-slate-700'
                   }`}>
                     {item.question}
                   </span>
@@ -142,8 +142,8 @@ export const FaqSection: React.FC = () => {
                   <div
                     className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
                       isOpen
-                        ? 'bg-[#0B1B33] text-[#E2F743] rotate-180'
-                        : 'bg-sky-50 text-[#0B1B33] hover:bg-[#E2F743]'
+                        ? 'bg-[#122620] text-[#F4F2BA] rotate-180'
+                        : 'bg-emerald-50 text-[#122620] hover:bg-[#F4F2BA]'
                     }`}
                   >
                     {isOpen ? (

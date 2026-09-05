@@ -30,7 +30,7 @@ export const PatientReviewsStack: React.FC = () => {
     <section id="reviews" className="relative py-10 sm:py-14 -mt-4 sm:-mt-6 px-4 sm:px-8 overflow-hidden z-10">
       
       {/* Background Soft Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-[#61A2EE]/15 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-[#4BB88E]/15 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-5xl mx-auto">
         
@@ -43,13 +43,13 @@ export const PatientReviewsStack: React.FC = () => {
           className="text-center mb-8 sm:mb-10"
         >
           <PopBadge className="mb-2.5">
-            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
-              <MessageSquareHeart className="w-3.5 h-3.5 text-[#0B1B33]" />
+            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
+              <MessageSquareHeart className="w-3.5 h-3.5 text-[#122620]" />
               PATIENT EXPERIENCES
             </span>
           </PopBadge>
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif] tracking-tight">
-            Voices from <TextHighlight color="blue" variant="bracket">Our Patients</TextHighlight>
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#122620] font-['Outfit',sans-serif] tracking-tight">
+            Voices from <TextHighlight color="mint" variant="bracket">Our Patients</TextHighlight>
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 font-medium max-w-md mx-auto mt-2">
             Tap any patient portrait to read their firsthand story.
@@ -81,8 +81,8 @@ export const PatientReviewsStack: React.FC = () => {
                 transition={{ type: 'spring', damping: 14, stiffness: 180 }}
                 className={`relative cursor-pointer p-1 rounded-2xl bg-white transition-all select-none ${
                   isSelected
-                    ? 'ring-3 ring-[#0B1B33] shadow-xl shadow-sky-950/20 z-20'
-                    : 'shadow-md hover:opacity-90 z-10 border border-sky-100'
+                    ? 'ring-3 ring-[#122620] shadow-xl shadow-emerald-950/15 z-20'
+                    : 'shadow-md hover:opacity-90 z-10 border border-emerald-100'
                 }`}
               >
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden bg-slate-100">
@@ -94,7 +94,7 @@ export const PatientReviewsStack: React.FC = () => {
                   />
                 </div>
                 {isSelected && (
-                  <div className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#E2F743] text-[#0B1B33] font-bold flex items-center justify-center text-[10px] shadow border border-white">
+                  <div className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#F4F2BA] text-[#122620] font-bold flex items-center justify-center text-[10px] shadow border border-white">
                     ★
                   </div>
                 )}
@@ -121,15 +121,15 @@ export const PatientReviewsStack: React.FC = () => {
                 if (swipe < -50) handleNext();
                 else if (swipe > 50) handlePrev();
               }}
-              className="relative bg-white/95 backdrop-blur-xl rounded-[36px] p-6 sm:p-10 shadow-[0_25px_60px_-15px_rgba(11,27,51,0.15)] border-2 border-white text-center select-none"
+              className="relative bg-white/95 backdrop-blur-xl rounded-[36px] p-6 sm:p-10 shadow-[0_25px_60px_-15px_rgba(18,38,32,0.12)] border-2 border-white text-center select-none"
             >
               {/* Subtle Quote Glyphs */}
               <div className="flex justify-center mb-3">
-                <Quote className="w-8 h-8 text-[#61A2EE]/40 rotate-180" />
+                <Quote className="w-8 h-8 text-[#4BB88E]/40 rotate-180" />
               </div>
 
               {/* Short Authentic Review Text */}
-              <p className="text-base sm:text-xl font-bold text-[#0B1B33] font-['Outfit',sans-serif] leading-relaxed tracking-tight mb-6">
+              <p className="text-base sm:text-xl font-bold text-[#122620] font-['Outfit',sans-serif] leading-relaxed tracking-tight mb-6">
                 "{activeReview.reviewText}"
               </p>
 
@@ -142,24 +142,24 @@ export const PatientReviewsStack: React.FC = () => {
                     src={activeReview.avatarUrl}
                     alt={activeReview.patientName}
                     referrerPolicy="no-referrer"
-                    className="w-10 h-10 rounded-full object-cover border-2 border-[#61A2EE] shadow-sm"
+                    className="w-10 h-10 rounded-full object-cover border-2 border-[#4BB88E] shadow-sm"
                   />
                   <div>
                     <div className="flex items-center gap-1.5 justify-center sm:justify-start">
-                      <span className="font-black text-sm text-[#0B1B33] font-['Outfit',sans-serif]">
+                      <span className="font-black text-sm text-[#122620] font-['Outfit',sans-serif]">
                         {activeReview.patientName}
                       </span>
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
                     </div>
-                    <span className="text-xs text-[#61A2EE] font-bold">
+                    <span className="text-xs text-[#4BB88E] font-bold">
                       {activeReview.treatment}
                     </span>
                   </div>
                 </div>
 
                 {/* Rating Badge */}
-                <div className="flex items-center gap-1.5 bg-[#E2F743] px-3.5 py-1.5 rounded-full text-xs font-black text-[#0B1B33] font-['Outfit',sans-serif] shadow-sm">
-                  <Star className="w-3.5 h-3.5 fill-[#0B1B33] text-[#0B1B33]" />
+                <div className="flex items-center gap-1.5 bg-[#F4F2BA] px-3.5 py-1.5 rounded-full text-xs font-black text-[#122620] font-['Outfit',sans-serif] shadow-sm">
+                  <Star className="w-3.5 h-3.5 fill-[#122620] text-[#122620]" />
                   <span>5.0 Verified</span>
                 </div>
 
@@ -176,7 +176,7 @@ export const PatientReviewsStack: React.FC = () => {
               whileHover={{ scale: 1.15, x: -2 }}
               whileTap={{ scale: 0.9 }}
               transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-              className="w-10 h-10 rounded-full bg-white hover:bg-[#0B1B33] hover:text-white border border-sky-100 text-[#0B1B33] flex items-center justify-center shadow-sm transition-colors cursor-pointer font-bold"
+              className="w-10 h-10 rounded-full bg-white hover:bg-[#122620] hover:text-[#F4F2BA] border border-emerald-100 text-[#122620] flex items-center justify-center shadow-sm transition-colors cursor-pointer font-bold"
               title="Previous Review"
             >
               <ChevronLeft className="w-4 h-4" />
@@ -190,7 +190,7 @@ export const PatientReviewsStack: React.FC = () => {
               whileHover={{ scale: 1.15, x: 2 }}
               whileTap={{ scale: 0.9 }}
               transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-              className="w-10 h-10 rounded-full bg-white hover:bg-[#0B1B33] hover:text-white border border-sky-100 text-[#0B1B33] flex items-center justify-center shadow-sm transition-colors cursor-pointer font-bold"
+              className="w-10 h-10 rounded-full bg-white hover:bg-[#122620] hover:text-[#F4F2BA] border border-emerald-100 text-[#122620] flex items-center justify-center shadow-sm transition-colors cursor-pointer font-bold"
               title="Next Review"
             >
               <ChevronRight className="w-4 h-4" />

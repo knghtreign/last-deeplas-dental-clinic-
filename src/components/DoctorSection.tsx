@@ -38,7 +38,7 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
     <section id="doctor" className="relative py-10 sm:py-16 px-3 sm:px-6 lg:px-8 overflow-visible z-10">
       
       {/* Background Soft Aura */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] bg-gradient-to-tr from-[#61A2EE]/20 via-[#C8F8C3]/20 to-[#E2F743]/15 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] bg-gradient-to-tr from-[#4BB88E]/20 via-[#D4F3E7]/25 to-[#F4F2BA]/20 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-4xl mx-auto text-center">
         
@@ -51,13 +51,13 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
           className="mb-6 sm:mb-8 inline-block"
         >
           <PopBadge className="mb-2.5">
-            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
-              <Award className="w-3.5 h-3.5 text-[#0B1B33]" />
+            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
+              <Award className="w-3.5 h-3.5 text-[#122620]" />
               LEAD CLINICIAN
             </span>
           </PopBadge>
 
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif] tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#122620] font-['Outfit',sans-serif] tracking-tight">
             Personal Care by <TextHighlight color="yellow" variant="wavy">Dr. Deepal Shah</TextHighlight>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 font-medium max-w-md mx-auto mt-2 leading-relaxed">
@@ -83,7 +83,7 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
             onClick={handleOpen}
           >
             {/* Soft ambient glow behind pill */}
-            <div className="absolute -inset-2 bg-[#61A2EE]/30 rounded-full blur-md opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute -inset-2 bg-[#4BB88E]/30 rounded-full blur-md opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
 
             {/* The Spec Pill with Bouncy Pop-In */}
             <motion.button
@@ -91,27 +91,27 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
               whileHover={{ scale: 1.08, y: -3 }}
               whileTap={{ scale: 0.94 }}
               transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-              className="relative min-w-[220px] h-[60px] bg-white hover:bg-white text-[#0B1B33] rounded-full px-4 border-2 border-sky-200/80 shadow-[0_12px_28px_-6px_rgba(11,27,51,0.15)] flex items-center justify-between gap-3 transition-all font-['Outfit',sans-serif] z-10 cursor-pointer"
+              className="relative min-w-[220px] h-[60px] bg-white hover:bg-white text-[#122620] rounded-full px-4 border-2 border-emerald-200/80 shadow-[0_12px_28px_-6px_rgba(18,38,32,0.12)] flex items-center justify-between gap-3 transition-all font-['Outfit',sans-serif] z-10 cursor-pointer"
             >
               {/* Left: Small Yellow Accent Dot with subtle pulse */}
               <div className="relative flex items-center justify-center shrink-0">
-                <span className="w-3.5 h-3.5 rounded-full bg-[#E2F743] border border-amber-300 shadow-sm" />
-                <span className="absolute w-3.5 h-3.5 rounded-full bg-[#E2F743] animate-ping opacity-75" />
+                <span className="w-3.5 h-3.5 rounded-full bg-[#F4F2BA] border border-amber-300 shadow-sm" />
+                <span className="absolute w-3.5 h-3.5 rounded-full bg-[#F4F2BA] animate-ping opacity-75" />
               </div>
 
               {/* Center Text: MEET DR. DEEPAL SHAH */}
-              <span className="text-[12px] font-black tracking-wider text-[#0B1B33] whitespace-nowrap">
+              <span className="text-[12px] font-black tracking-wider text-[#122620] whitespace-nowrap">
                 MEET DR. DEEPAL SHAH
               </span>
 
               {/* Right: Arrow Icon */}
-              <div className="w-8 h-8 rounded-full bg-[#61A2EE]/20 text-[#0B1B33] flex items-center justify-center shrink-0 group-hover:translate-x-1 group-hover:bg-[#0B1B33] group-hover:text-[#E2F743] transition-all duration-200">
+              <div className="w-8 h-8 rounded-full bg-[#4BB88E]/20 text-[#122620] flex items-center justify-center shrink-0 group-hover:translate-x-1 group-hover:bg-[#122620] group-hover:text-[#F4F2BA] transition-all duration-200">
                 <ArrowRight className="w-4 h-4" />
               </div>
             </motion.button>
             
             {/* Helper Text */}
-            <span className="block text-center text-[10px] uppercase font-black tracking-widest text-[#61A2EE] mt-3">
+            <span className="block text-center text-[10px] uppercase font-black tracking-widest text-[#4BB88E] mt-3">
               Click to open profile ✨
             </span>
           </motion.div>
@@ -122,7 +122,7 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
               whileHover={{ scale: 1.08, y: -2 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', damping: 12, stiffness: 260 }}
-              className="inline-flex items-center gap-1.5 bg-white px-3.5 py-1.5 rounded-full border border-sky-100 text-[11px] font-black text-[#0B1B33] shadow-sm font-['Outfit',sans-serif] cursor-pointer"
+              className="inline-flex items-center gap-1.5 bg-white px-3.5 py-1.5 rounded-full border border-emerald-100 text-[11px] font-black text-[#122620] shadow-sm font-['Outfit',sans-serif] cursor-pointer"
             >
               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
               <span>21 Years Clinical Mastery</span>
@@ -132,9 +132,9 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
               whileHover={{ scale: 1.08, y: -2 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', damping: 12, stiffness: 260 }}
-              className="inline-flex items-center gap-1.5 bg-white px-3.5 py-1.5 rounded-full border border-sky-100 text-[11px] font-black text-[#0B1B33] shadow-sm font-['Outfit',sans-serif] cursor-pointer"
+              className="inline-flex items-center gap-1.5 bg-white px-3.5 py-1.5 rounded-full border border-emerald-100 text-[11px] font-black text-[#122620] shadow-sm font-['Outfit',sans-serif] cursor-pointer"
             >
-              <Star className="w-3.5 h-3.5 text-[#0B1B33] fill-[#E2F743]" />
+              <Star className="w-3.5 h-3.5 text-[#122620] fill-[#F4F2BA]" />
               <span>5.0 Star Rated Care</span>
             </motion.span>
 
@@ -142,9 +142,9 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
               whileHover={{ scale: 1.08, y: -2 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', damping: 12, stiffness: 260 }}
-              className="inline-flex items-center gap-1.5 bg-[#C8F8C3] px-3.5 py-1.5 rounded-full border border-emerald-200 text-[11px] font-black text-[#0B1B33] shadow-sm font-['Outfit',sans-serif] cursor-pointer"
+              className="inline-flex items-center gap-1.5 bg-[#D4F3E7] px-3.5 py-1.5 rounded-full border border-emerald-200 text-[11px] font-black text-[#122620] shadow-sm font-['Outfit',sans-serif] cursor-pointer"
             >
-              <Sparkles className="w-3.5 h-3.5 text-[#0B1B33]" />
+              <Sparkles className="w-3.5 h-3.5 text-[#122620]" />
               <span>Gentle & Pain-Free</span>
             </motion.span>
           </div>
@@ -170,7 +170,7 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.2 }}
                   onClick={handleClose}
-                  className="fixed inset-0 bg-[#0B1B33]/85 backdrop-blur-md cursor-pointer z-[99998]"
+                  className="fixed inset-0 bg-[#122620]/85 backdrop-blur-md cursor-pointer z-[99998]"
                 />
 
                 {/* Modal Card with Bouncy Spring Pop-In */}
@@ -186,7 +186,7 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
                   className="relative w-full max-w-lg bg-white rounded-[32px] sm:rounded-[36px] p-6 sm:p-8 shadow-[0_25px_80px_rgba(0,0,0,0.5)] border-2 border-white overflow-hidden z-[99999] text-left my-auto"
                 >
                   {/* Top Gradient Ribbon */}
-                  <div className="absolute top-0 inset-x-0 h-2.5 bg-gradient-to-r from-[#61A2EE] via-[#E2F743] to-[#61A2EE]" />
+                  <div className="absolute top-0 inset-x-0 h-2.5 bg-gradient-to-r from-[#4BB88E] via-[#F4F2BA] to-[#4BB88E]" />
 
                   {/* Close Button with Pop-In */}
                   <motion.button
@@ -195,7 +195,7 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
                     whileTap={{ scale: 0.9 }}
                     transition={{ type: 'spring', damping: 12, stiffness: 300 }}
                     onClick={handleClose}
-                    className="absolute top-4 right-4 sm:top-5 sm:right-5 w-10 h-10 rounded-full bg-slate-100 hover:bg-[#0B1B33] hover:text-white text-[#0B1B33] flex items-center justify-center transition-colors cursor-pointer shadow-md z-30"
+                    className="absolute top-4 right-4 sm:top-5 sm:right-5 w-10 h-10 rounded-full bg-slate-100 hover:bg-[#122620] hover:text-[#F4F2BA] text-[#122620] flex items-center justify-center transition-colors cursor-pointer shadow-md z-30"
                     title="Close Profile"
                   >
                     <X className="w-5 h-5" />
@@ -204,14 +204,14 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
                   <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 pt-2">
                     
                     {/* Doctor Portrait */}
-                    <div className="w-28 sm:w-36 aspect-[3/4] rounded-[24px] overflow-hidden bg-sky-100 border-2 border-sky-200 shadow-md shrink-0 relative">
+                    <div className="w-28 sm:w-36 aspect-[3/4] rounded-[24px] overflow-hidden bg-emerald-50 border-2 border-emerald-200 shadow-md shrink-0 relative">
                       <img
                         src={CLINIC_IMAGES.drDeepalPortrait}
                         alt="Dr. Deepal Shah - Lead Clinician at Malabar Hill"
                         referrerPolicy="no-referrer"
                         className="w-full h-full object-cover"
                       />
-                      <div className="absolute bottom-1.5 left-1.5 right-1.5 bg-[#0B1B33] text-[#E2F743] text-[9px] font-black text-center py-0.5 rounded-md font-['Outfit',sans-serif]">
+                      <div className="absolute bottom-1.5 left-1.5 right-1.5 bg-[#122620] text-[#F4F2BA] text-[9px] font-black text-center py-0.5 rounded-md font-['Outfit',sans-serif]">
                         MALABAR HILL
                       </div>
                     </div>
@@ -219,14 +219,14 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
                     {/* Doctor Details */}
                     <div className="flex-1 space-y-3 text-center sm:text-left">
                       <div>
-                        <span className="text-[10px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3 py-1 rounded-full inline-block mb-1 shadow-sm font-['Outfit',sans-serif]">
+                        <span className="text-[10px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3 py-1 rounded-full inline-block mb-1 shadow-sm font-['Outfit',sans-serif]">
                           Dentist & Lead Clinician
                         </span>
-                        <h3 className="text-2xl sm:text-3xl font-black text-[#0B1B33] font-['Outfit',sans-serif] leading-tight">
+                        <h3 className="text-2xl sm:text-3xl font-black text-[#122620] font-['Outfit',sans-serif] leading-tight">
                           Dr. Deepal Shah
                         </h3>
                         <p className="text-xs font-bold text-slate-500 flex items-center justify-center sm:justify-start gap-1 mt-0.5">
-                          <MapPin className="w-3.5 h-3.5 text-[#61A2EE]" />
+                          <MapPin className="w-3.5 h-3.5 text-[#4BB88E]" />
                           Malabar Hill, Mumbai
                         </p>
                       </div>
@@ -244,7 +244,7 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
                         <span className="text-[10px] font-black text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg">
                           21 Years Clinical Practice
                         </span>
-                        <span className="text-[10px] font-black text-[#0B1B33] bg-[#C8F8C3] px-2.5 py-1 rounded-lg">
+                        <span className="text-[10px] font-black text-[#122620] bg-[#D4F3E7] px-2.5 py-1 rounded-lg">
                           Zero-Pain Protocol
                         </span>
                       </div>
@@ -261,9 +261,9 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
                             playSparkle();
                             onOpenBooking();
                           }}
-                          className="bg-[#E2F743] hover:bg-[#d8f035] text-[#0B1B33] font-black text-xs sm:text-sm px-6 py-3 rounded-full shadow-lg shadow-yellow-400/30 font-['Outfit',sans-serif] flex items-center gap-2 cursor-pointer border border-white"
+                          className="bg-[#F4F2BA] hover:bg-[#e8e5a7] text-[#122620] font-black text-xs sm:text-sm px-6 py-3 rounded-full shadow-lg shadow-amber-200/40 font-['Outfit',sans-serif] flex items-center gap-2 cursor-pointer border border-white"
                         >
-                          <Sparkles className="w-4 h-4 text-[#0B1B33]" />
+                          <Sparkles className="w-4 h-4 text-[#122620]" />
                           <span>Book Consultation</span>
                         </motion.button>
 
@@ -273,9 +273,9 @@ export const DoctorSection: React.FC<DoctorSectionProps> = ({ onOpenBooking }) =
                           whileTap={{ scale: 0.94 }}
                           transition={{ type: 'spring', damping: 12, stiffness: 300 }}
                           href={`tel:${CLINIC_DETAILS.phoneClean}`}
-                          className="bg-sky-50 hover:bg-sky-100 text-[#0B1B33] font-bold text-xs px-4 py-3 rounded-full border border-sky-200 transition-all flex items-center gap-1.5"
+                          className="bg-emerald-50 hover:bg-emerald-100 text-[#122620] font-bold text-xs px-4 py-3 rounded-full border border-emerald-200 transition-all flex items-center gap-1.5"
                         >
-                          <Phone className="w-3.5 h-3.5 text-[#61A2EE]" />
+                          <Phone className="w-3.5 h-3.5 text-[#4BB88E]" />
                           <span>Call Clinic</span>
                         </motion.a>
                       </div>

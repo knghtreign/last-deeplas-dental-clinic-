@@ -26,7 +26,7 @@ const CONCERNS: ConcernCard[] = [
     tag: 'SENSITIVITY',
     solution: 'Laser desensitization & protective fluoride sealing',
     treatmentName: 'Consultation & General Checkup',
-    color: '#61A2EE',
+    color: '#4BB88E',
     badgeText: 'Instant Thermal Relief',
   },
   {
@@ -37,7 +37,7 @@ const CONCERNS: ConcernCard[] = [
     tag: 'AESTHETICS',
     solution: '45-minute gentle laser whitening up to 8 shades brighter',
     treatmentName: 'WHITENING',
-    color: '#E2F743',
+    color: '#F4F2BA',
     badgeText: 'Up to 8 Shades Whiter',
   },
   {
@@ -48,7 +48,7 @@ const CONCERNS: ConcernCard[] = [
     tag: 'RESTORATION',
     solution: '3D computer-guided titanium implants with natural zirconia crowns',
     treatmentName: 'IMPLANTS',
-    color: '#E2F743',
+    color: '#F4F2BA',
     badgeText: 'Rock-Solid Bio-Integration',
   },
   {
@@ -59,7 +59,7 @@ const CONCERNS: ConcernCard[] = [
     tag: 'PAIN RELIEF',
     solution: 'Single-sitting microscopic root canal with painless rotary instruments',
     treatmentName: 'ROOT CANAL',
-    color: '#61A2EE',
+    color: '#4BB88E',
     badgeText: 'Single-Sitting Mastery',
   },
   {
@@ -70,7 +70,7 @@ const CONCERNS: ConcernCard[] = [
     tag: 'GUM HEALTH',
     solution: 'Ultrasonic hydro-polishing and deep periodontal therapy',
     treatmentName: 'CLEANING',
-    color: '#C8F8C3',
+    color: '#D4F3E7',
     badgeText: 'Deep Hydro-Prophylaxis',
   },
 ];
@@ -104,7 +104,7 @@ export const PatientConcernsFan: React.FC<PatientConcernsFanProps> = ({ onSelect
     <section id="concerns" className="relative py-12 sm:py-20 px-3 sm:px-6 lg:px-8 overflow-hidden z-10">
       
       {/* Ambient background soft glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-r from-[#61A2EE]/15 via-[#E2F743]/15 to-[#C8F8C3]/20 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-r from-[#4BB88E]/15 via-[#F4F2BA]/15 to-[#D4F3E7]/20 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-6xl mx-auto">
         
@@ -117,13 +117,13 @@ export const PatientConcernsFan: React.FC<PatientConcernsFanProps> = ({ onSelect
           className="text-center mb-6 sm:mb-10"
         >
           <PopBadge className="mb-2.5">
-            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#0B1B33] bg-[#E2F743] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
-              <Sparkles className="w-3.5 h-3.5 text-[#0B1B33]" />
+            <span className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#122620] bg-[#F4F2BA] px-3.5 py-1.5 rounded-full shadow-sm font-['Outfit',sans-serif]">
+              <Sparkles className="w-3.5 h-3.5 text-[#122620]" />
               PATIENT CONCERNS
             </span>
           </PopBadge>
 
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#0B1B33] font-['Outfit',sans-serif] tracking-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#122620] font-['Outfit',sans-serif] tracking-tight">
             What Concerns Do Patients <TextHighlight color="yellow" variant="wavy">Come To Us For?</TextHighlight>
           </h2>
 
@@ -139,14 +139,14 @@ export const PatientConcernsFan: React.FC<PatientConcernsFanProps> = ({ onSelect
               whileHover={{ scale: 1.15, x: -2 }}
               whileTap={{ scale: 0.9 }}
               transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-              className="w-11 h-11 rounded-full bg-[#E2F743] hover:bg-[#d4eb36] text-[#0B1B33] flex items-center justify-center shadow-md border-2 border-white transition-colors cursor-pointer"
+              className="w-11 h-11 rounded-full bg-[#F4F2BA] hover:bg-[#eae89f] text-[#122620] flex items-center justify-center shadow-md border-2 border-white transition-colors cursor-pointer"
               title="Previous Concern"
             >
               <ArrowLeft className="w-5 h-5 stroke-[2.5]" />
             </motion.button>
 
-            <span className="text-xs font-black text-[#0B1B33] bg-white px-4 py-2 rounded-full border border-sky-100 shadow-xs font-['Outfit',sans-serif]">
-              {activeIndex + 1} of {CONCERNS.length} · <span className="text-[#61A2EE]">{activeConcern.tag}</span>
+            <span className="text-xs font-black text-[#122620] bg-white px-4 py-2 rounded-full border border-emerald-100 shadow-xs font-['Outfit',sans-serif]">
+              {activeIndex + 1} of {CONCERNS.length} · <span className="text-[#4BB88E]">{activeConcern.tag}</span>
             </span>
 
             <motion.button
@@ -155,7 +155,7 @@ export const PatientConcernsFan: React.FC<PatientConcernsFanProps> = ({ onSelect
               whileHover={{ scale: 1.15, x: 2 }}
               whileTap={{ scale: 0.9 }}
               transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-              className="w-11 h-11 rounded-full bg-[#E2F743] hover:bg-[#d4eb36] text-[#0B1B33] flex items-center justify-center shadow-md border-2 border-white transition-colors cursor-pointer"
+              className="w-11 h-11 rounded-full bg-[#F4F2BA] hover:bg-[#eae89f] text-[#122620] flex items-center justify-center shadow-md border-2 border-white transition-colors cursor-pointer"
               title="Next Concern"
             >
               <ArrowRight className="w-5 h-5 stroke-[2.5]" />
@@ -171,13 +171,6 @@ export const PatientConcernsFan: React.FC<PatientConcernsFanProps> = ({ onSelect
               // Calculate relative offset from activeIndex
               const offset = idx - activeIndex;
               const isCenter = offset === 0;
-
-              // Fan out layout math:
-              // angle: offset * 11 degrees
-              // xTranslation: offset * 140px on mobile, 180px on desktop
-              // scale: 1 - Math.abs(offset) * 0.12
-              // zIndex: 10 - Math.abs(offset)
-              // opacity: 1 - Math.abs(offset) * 0.25
 
               const rotationAngle = offset * 10;
               const xPos = offset * 170;
@@ -206,11 +199,11 @@ export const PatientConcernsFan: React.FC<PatientConcernsFanProps> = ({ onSelect
                   transition={{ type: 'spring', damping: 16, stiffness: 220 }}
                   className={`absolute top-0 w-[240px] sm:w-[280px] h-[320px] sm:h-[370px] rounded-[32px] overflow-hidden cursor-pointer select-none shadow-2xl border-4 transition-colors ${
                     isCenter
-                      ? 'border-[#E2F743] shadow-[0_25px_60px_-15px_rgba(11,27,51,0.35)]'
-                      : 'border-white/80 shadow-[0_15px_35px_-10px_rgba(11,27,51,0.2)]'
+                      ? 'border-[#F4F2BA] shadow-[0_25px_60px_-15px_rgba(18,38,32,0.3)]'
+                      : 'border-white/80 shadow-[0_15px_35px_-10px_rgba(18,38,32,0.18)]'
                   }`}
                   style={{
-                    backgroundColor: '#0B1B33',
+                    backgroundColor: '#122620',
                     transformOrigin: 'bottom center',
                   }}
                 >
@@ -228,7 +221,7 @@ export const PatientConcernsFan: React.FC<PatientConcernsFanProps> = ({ onSelect
                     {/* Top Pill with Problem Headline & Arrow Button */}
                     <div className="absolute top-3.5 inset-x-3.5 flex items-start justify-between gap-2">
                       <div className="bg-black/60 backdrop-blur-md px-3 py-2 rounded-2xl border border-white/20 max-w-[190px]">
-                        <span className="text-[10px] font-black uppercase tracking-wider text-[#E2F743] block font-['Outfit',sans-serif]">
+                        <span className="text-[10px] font-black uppercase tracking-wider text-[#F4F2BA] block font-['Outfit',sans-serif]">
                           {concern.tag}
                         </span>
                         <span className="text-xs font-black text-white leading-tight block truncate mt-0.5">
@@ -238,7 +231,7 @@ export const PatientConcernsFan: React.FC<PatientConcernsFanProps> = ({ onSelect
 
                       <motion.div
                         whileHover={{ scale: 1.15, rotate: 15 }}
-                        className="w-8 h-8 rounded-full bg-white text-[#0B1B33] flex items-center justify-center shadow-md shrink-0 border border-white"
+                        className="w-8 h-8 rounded-full bg-white text-[#122620] flex items-center justify-center shadow-md shrink-0 border border-white"
                       >
                         <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
                       </motion.div>
@@ -246,8 +239,8 @@ export const PatientConcernsFan: React.FC<PatientConcernsFanProps> = ({ onSelect
 
                     {/* Glowing highlight aura on center card */}
                     {isCenter && (
-                      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#0B1B33] via-[#0B1B33]/80 to-transparent p-4 flex flex-col justify-end">
-                        <span className="text-[10px] font-extrabold text-[#E2F743] uppercase tracking-wider block font-['Outfit',sans-serif]">
+                      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#122620] via-[#122620]/80 to-transparent p-4 flex flex-col justify-end">
+                        <span className="text-[10px] font-extrabold text-[#F4F2BA] uppercase tracking-wider block font-['Outfit',sans-serif]">
                           ✨ {concern.badgeText}
                         </span>
                         <p className="text-xs text-white/95 font-medium leading-snug line-clamp-2 mt-0.5">
@@ -275,14 +268,14 @@ export const PatientConcernsFan: React.FC<PatientConcernsFanProps> = ({ onSelect
           >
             <div className="space-y-1">
               <div className="flex items-center gap-2">
-                <span className="text-[10px] font-black uppercase tracking-wider text-[#0B1B33] bg-[#E2F743] px-2.5 py-1 rounded-full font-['Outfit',sans-serif]">
+                <span className="text-[10px] font-black uppercase tracking-wider text-[#122620] bg-[#F4F2BA] px-2.5 py-1 rounded-full font-['Outfit',sans-serif]">
                   {activeConcern.tag}
                 </span>
                 <span className="text-xs font-bold text-slate-500">
                   {activeConcern.badgeText}
                 </span>
               </div>
-              <h4 className="text-base sm:text-lg font-black text-[#0B1B33] font-['Outfit',sans-serif]">
+              <h4 className="text-base sm:text-lg font-black text-[#122620] font-['Outfit',sans-serif]">
                 {activeConcern.title}
               </h4>
               <p className="text-xs text-slate-600 font-medium">
@@ -299,10 +292,10 @@ export const PatientConcernsFan: React.FC<PatientConcernsFanProps> = ({ onSelect
               whileHover={{ scale: 1.08, y: -2 }}
               whileTap={{ scale: 0.94 }}
               transition={{ type: 'spring', damping: 12, stiffness: 300 }}
-              className="bg-[#0B1B33] hover:bg-[#142d54] text-[#E2F743] font-black text-xs px-6 py-3.5 rounded-full shadow-md font-['Outfit',sans-serif] shrink-0 border border-white/20 flex items-center gap-2 cursor-pointer"
+              className="bg-[#122620] hover:bg-[#1b382f] text-[#F4F2BA] font-black text-xs px-6 py-3.5 rounded-full shadow-md font-['Outfit',sans-serif] shrink-0 border border-white/20 flex items-center gap-2 cursor-pointer"
             >
               <span>Book For This</span>
-              <ArrowUpRight className="w-4 h-4 text-[#E2F743]" />
+              <ArrowUpRight className="w-4 h-4 text-[#F4F2BA]" />
             </motion.button>
           </motion.div>
         </AnimatePresence>
