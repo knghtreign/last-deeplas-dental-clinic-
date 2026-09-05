@@ -1,25 +1,44 @@
 import { TreatmentInfo, ReviewItem, ClinicHotspot, FaqItem, ClinicSpacePhoto, ClinicService } from '../types';
 
-// Generated asset paths
+import heroToothWorkers from '../assets/images/hero_workers_tooth_1788252748342.jpg';
+import isometricClinic from '../assets/images/isometric_clinic_1788252767756.jpg';
+import drDeepalPortrait from '../assets/images/dr_deepal_portrait_1788253822193.jpg';
+import drDeepalPortraitOld from '../assets/images/dr_deepal_portrait_1788252789547.jpg';
+import malabarMap from '../assets/images/mumbai_malabar_map_1788252835651.jpg';
+import smileResult from '../assets/images/smile_result_1788252853269.jpg';
+import clinicSuite from '../assets/images/clinic_suite_interior_1788253761760.jpg';
+import dentistAction from '../assets/images/dentist_treatment_action_1788253779087.jpg';
+import clinicLounge from '../assets/images/clinic_lounge_reception_1788253794362.jpg';
+import digitalScanner from '../assets/images/digital_dental_scanner_1788253808531.jpg';
+import titaniumImplant from '../assets/images/titanium_dental_implant_1788260427614.jpg';
+import patientPriya from '../assets/images/patient_priya_avatar_1788254358383.jpg';
+import patientRahul from '../assets/images/patient_rahul_avatar_1788254378193.jpg';
+import patientAnanya from '../assets/images/patient_ananya_avatar_1788254397087.jpg';
+import paediatrics from '../assets/images/paediatric_dental_care_1788595045588.jpg';
+import veneersCrowns from '../assets/images/dental_veneer_crown_1788595062863.jpg';
+import dentalXray from '../assets/images/dental_xray_modern_1788595079091.jpg';
+import dentalBonding from '../assets/images/dental_bonding_macro_1788595094151.jpg';
+
+// Clinic image asset paths (bundled by Vite for development & production)
 export const CLINIC_IMAGES = {
-  heroToothWorkers: '/src/assets/images/hero_workers_tooth_1788252748342.jpg',
-  isometricClinic: '/src/assets/images/isometric_clinic_1788252767756.jpg',
-  drDeepalPortrait: '/src/assets/images/dr_deepal_portrait_1788253822193.jpg',
-  drDeepalPortraitOld: '/src/assets/images/dr_deepal_portrait_1788252789547.jpg',
-  malabarMap: '/src/assets/images/mumbai_malabar_map_1788252835651.jpg',
-  smileResult: '/src/assets/images/smile_result_1788252853269.jpg',
-  clinicSuite: '/src/assets/images/clinic_suite_interior_1788253761760.jpg',
-  dentistAction: '/src/assets/images/dentist_treatment_action_1788253779087.jpg',
-  clinicLounge: '/src/assets/images/clinic_lounge_reception_1788253794362.jpg',
-  digitalScanner: '/src/assets/images/digital_dental_scanner_1788253808531.jpg',
-  titaniumImplant: '/src/assets/images/titanium_dental_implant_1788260427614.jpg',
-  patientPriya: '/src/assets/images/patient_priya_avatar_1788254358383.jpg',
-  patientRahul: '/src/assets/images/patient_rahul_avatar_1788254378193.jpg',
-  patientAnanya: '/src/assets/images/patient_ananya_avatar_1788254397087.jpg',
-  paediatrics: '/src/assets/images/paediatric_dental_care_1788595045588.jpg',
-  veneersCrowns: '/src/assets/images/dental_veneer_crown_1788595062863.jpg',
-  dentalXray: '/src/assets/images/dental_xray_modern_1788595079091.jpg',
-  dentalBonding: '/src/assets/images/dental_bonding_macro_1788595094151.jpg',
+  heroToothWorkers,
+  isometricClinic,
+  drDeepalPortrait,
+  drDeepalPortraitOld,
+  malabarMap,
+  smileResult,
+  clinicSuite,
+  dentistAction,
+  clinicLounge,
+  digitalScanner,
+  titaniumImplant,
+  patientPriya,
+  patientRahul,
+  patientAnanya,
+  paediatrics,
+  veneersCrowns,
+  dentalXray,
+  dentalBonding,
 };
 
 export const CLINIC_DETAILS = {
